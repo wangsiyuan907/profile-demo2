@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Siyuan 视觉设计师作品集" />
+    <title>SIYUAN - Visual Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top">SIYUAN<span>®</span></a>
+      <nav aria-label="主导航"><a href="#work">项目</a><a href="#library">资产库</a><a href="#collaboration">合作</a><a href="#contact">联系</a></nav>
+      <button class="theme-toggle" type="button" aria-label="切换浅色或深色模式"><span class="toggle-sun">☼</span><span class="toggle-moon">◐</span></button>
+    </header>
+    <main id="top">
+      <section class="hero folder-hero" aria-label="SIYUAN 作品集首页">
+        <div class="portfolio-folder">
+          <img class="folder-back" src="folder/folder-back.svg" alt="" />
+          <div class="folder-card-stack" aria-label="品牌项目卡片">
+            <button class="brand-card brand-card-benefit" type="button" data-project="givenchy-2026-cny"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/givenchy-2026-cny/07-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/givnechy-logo.svg" alt="Givenchy" /></button>
+            <button class="brand-card brand-card-givenchy" type="button" data-project="mufe-2024-hdskin"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/mufe-2024-hdskin/05-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/mufe-logo.svg" alt="MAKE UP FOR EVER" /></button>
+            <button class="brand-card brand-card-mufe" type="button" data-project="mufe-2025-cny"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/mufe-2025-cny/05-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/mufe-logo.svg" alt="MAKE UP FOR EVER" /></button>
+            <button class="brand-card brand-card-benefit-alt" type="button" data-project="benefit-2023-d11"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/benefit-2023-d11/06-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/benefit-logo.svg?v=20260818" alt="Benefit" /></button>
+          </div>
+          <img class="bulb-sticker" src="folder/light bulb.svg" alt="" />
+          <div class="folder-front"><img class="folder-art" src="folder/folder-front.svg" alt="" /><span class="eye-sticker eye-left" aria-hidden="true"><img class="eye-base" src="folder/eye.svg" alt="" /><img class="eyeball" src="folder/eyeball.svg" alt="" /></span><span class="eye-sticker eye-right" aria-hidden="true"><img class="eye-base" src="folder/eye.svg" alt="" /><img class="eyeball" src="folder/eyeball.svg" alt="" /></span><img class="folder-title" src="folder/Portfolio.svg" alt="Portfolio" /><img class="folder-name" src="folder/name.svg" alt="@SIYUAN" /></div>
+        </div>
+      </section>
+      <section class="intro section-rule"><div class="intro-overview"><p class="intro-lead">9 年电商视觉设计经验，专注品牌营销视觉与全渠道落地。</p><p class="intro-lvmh">具备 LVMH 旗下 Givenchy、MUFE、Benefit 的品牌规范与全渠道电商视觉服务经验。</p></div><ol class="career-timeline" aria-label="工作经历"><li><time>2020 至今</time><strong>上海鲲驰</strong><span>设计主管 · Givenchy / MUFE / Benefit</span></li><li><time>2018 至 2019</time><strong>中睿意德</strong><span>设计组组长 · 多品牌店铺视觉</span></li><li><time>2016 至 2018</time><strong>奢蕊时尚</strong><span>视觉设计师 · 京东全球购 / 寺库</span></li></ol></section>
+      <section class="work-section section-rule" id="work"><div class="section-heading"><h2>项目</h2><p>重点案例在前，完整展示从策略到不同触点的视觉落地。</p></div><div class="project-grid" id="project-grid"></div></section>
+      <section class="library-section section-rule" id="library"><div class="section-heading"><h2>产品资产库</h2><p>MAKE UP FOR EVER 产品可视化素材。点击任意图片，即可查看全部资产。</p></div><button class="asset-marquee" type="button" id="library-trigger" aria-label="查看完整产品资产库"><span id="asset-track"></span></button></section>
+      <section class="work-section section-rule" id="collaboration"><div class="section-heading"><h2>合作项目</h2><p>外部合作与内部创作，从产品视觉、礼盒到品牌概念。</p></div><div class="project-grid" id="collaboration-grid"></div></section>
+      <footer id="contact" class="contact"><p class="eyebrow">合作与联系</p><h2>一起做点<br />有意思的事。</h2><div class="contact-content"><img class="qr-code" src="../../01-project-library/00-profile/wechat-qrcode-black.svg" alt="微信二维码" /><div class="contact-details"><button class="copy-contact" type="button" data-copy="13522972710" data-copy-hint="点击复制">电话：135 2297 2710</button><button class="copy-contact" type="button" data-copy="987685224@qq.com" data-copy-hint="点击复制">邮箱：987685224@qq.com</button><button class="copy-contact" type="button" data-copy="13522972710" data-copy-hint="点击复制">微信：13522972710</button></div></div><p class="copyright">© SIYUAN 2026</p></footer>
+    </main>
+    <dialog class="project-modal" id="project-modal"><div class="modal-shell"><button class="modal-close" type="button" aria-label="关闭">×</button><div id="modal-content"></div></div></dialog>
+    <dialog class="asset-lightbox" id="asset-lightbox"><button class="asset-lightbox-close" type="button" aria-label="关闭原图">×</button><button class="asset-lightbox-nav asset-lightbox-prev" type="button" aria-label="查看上一张"><span class="arrow-icon" aria-hidden="true"></span></button><div class="asset-lightbox-media" id="asset-lightbox-media"></div><button class="asset-lightbox-nav asset-lightbox-next" type="button" aria-label="查看下一张"><span class="arrow-icon" aria-hidden="true"></span></button></dialog>
+    <script src="assets-manifest.js"></script><script src="app.js"></script>
+  </body>
+</html>
