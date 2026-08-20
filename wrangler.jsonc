@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "profile-demo2",
+  "main": "worker.js",
+  "compatibility_date": "2025-02-04",
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS"
+  },
+  "r2_buckets": [
+    {
+      "binding": "PORTFOLIO_ASSETS",
+      "bucket_name": "profile-demo2-assets"
+    }
+  ]
+}
