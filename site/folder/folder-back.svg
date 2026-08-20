@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1458" height="1117" viewBox="0 0 1458 1117" fill="none">
+  <defs>
+    <linearGradient id="back" x1="729" y1="124" x2="729" y2="926" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#64C9ED"/>
+      <stop offset="1" stop-color="#75D1EF" stop-opacity=".78"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1458" height="1117" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+  <path d="M258 124h161c22 0 43 7 61 21l99 75c17 13 38 20 60 20h561c55 0 100 45 100 100v486c0 55-45 100-100 100H258c-55 0-100-45-100-100V224c0-55 45-100 100-100Z" fill="#79D5F2" opacity=".7" filter="url(#glow)"/>
+  <path d="M258 124h161c22 0 43 7 61 21l99 75c17 13 38 20 60 20h561c55 0 100 45 100 100v486c0 55-45 100-100 100H258c-55 0-100-45-100-100V224c0-55 45-100 100-100Z" fill="url(#back)"/>
+</svg>
