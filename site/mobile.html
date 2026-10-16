@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="王思远作品集移动端阅读版">
+  <title>王思远の作品集｜移动版</title>
+  <link rel="preload" href="./asset/fonts/SmileySans-Oblique.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <script src="./scripts/mobile.js" defer></script>
+</head>
+<body>
+  <header class="mobile-header">
+    <a class="mobile-brand" href="#home" aria-label="返回移动版首页">王思远の作品集</a>
+    <a class="mobile-desktop-link" href="./index.html">桌面版 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="mobile-app" aria-live="polite"></main>
+  <nav class="mobile-nav" aria-label="移动版作品集导航">
+    <a href="#home" data-route="home">首页</a>
+    <a href="#cases" data-route="cases">案例</a>
+    <a href="#collaboration" data-route="collaboration">协作</a>
+    <a href="#about" data-route="about">关于</a>
+    <a href="#contact" data-route="contact">联系</a>
+  </nav>
+</body>
+</html>

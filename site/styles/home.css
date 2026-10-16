@@ -1,0 +1,90 @@
+/* Base measurements come from MasterGo 首页 13:9752, 1440 × 820.
+   Every cqw value is the original pixel measurement / 14.4.
+   Preserve proportional scaling; do not clamp typography independently. */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: #fff; }
+body { padding: 0; margin: 0; min-height: 100svh; container-type: inline-size; }
+p, h1 { margin: 0; }
+.portfolio { width: 100%; min-height: 100svh; background: #fff; }
+.site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: flex-start; height: 5cqw; padding-left: 2.7777778cqw; background: #fff; }
+.site-brand { flex: 0 0 25.5555556cqw; margin-top: 1.6666667cqw; color: #000; font-family: "SmileySans Oblique"; font-size: 1.3888889cqw; font-weight: 400; line-height: 1.07; letter-spacing: 0.0694444cqw; text-decoration: none; }
+.site-nav { display: flex; align-items: flex-start; margin-top: 1.8055556cqw; }
+.nav-item { display: block; flex: 0 0 10.2083333cqw; width: 10.2083333cqw; padding: 0; border: 0; background: transparent; color: rgba(0,0,0,.56); font-family: "SmileySans Oblique"; font-size: .9722222cqw; font-weight: 400; line-height: 1.07; letter-spacing: .0486111cqw; text-align: left; white-space: nowrap; cursor: pointer; }
+.nav-home { flex-basis: 10.7638889cqw; width: 10.7638889cqw; }
+.nav-label { position: relative; display: inline-block; }
+.nav-item[aria-pressed="true"] { color: #000; }
+.nav-item[aria-pressed="true"] .nav-label::after { position: absolute; top: calc(100% + .4166667cqw); left: 0; width: 100%; height: .0694444cqw; min-height: 1px; background: currentColor; content: ""; }
+a:focus-visible, button:focus-visible { outline: 0.1388889cqw solid #000; outline-offset: 0.4166667cqw; }
+.home-content { position: sticky; top: 5cqw; z-index: 2; display: flex; height: calc(100svh - 5cqw); min-height: calc(100svh - 5cqw); align-items: flex-start; gap: 2.3638889cqw; padding-top: 1.9444444cqw; padding-left: 3.9583333cqw; background: #fff; }
+.hero-copy { flex: none; padding-top: 15.2083333cqw; }
+.hero-title { font-family: "SmileySans Oblique"; font-size: 3.8888889cqw; font-weight: 400; line-height: 1.2; letter-spacing: 0.1944444cqw; white-space: nowrap; }
+.hero-description { margin-top: 2.8194444cqw; font-family: "SmileySans Oblique"; font-size: 1.9444444cqw; line-height: 1.2; letter-spacing: 0.0972222cqw; white-space: nowrap; }
+.hero-art img { display: block; }
+.hero-art { width: 47.9833333cqw; height: 49.1666667cqw; position: relative; flex: none; margin: 0 }
+.portrait { position: absolute; left: calc(100% - 47.9833333cqw + 4.5833333cqw); bottom: 0cqw; z-index: 1; width: 36.875cqw; height: 49.1666667cqw; object-fit: cover }
+.tag-order { width: 16.8520833cqw; height: 8.8194444cqw; position: absolute; left: 0cqw; top: 11.1805556cqw; z-index: 2 }
+.paper-order { position: absolute; transform: rotate(-6.92deg); transform-origin: 0 0; left: 0cqw; bottom: 0.4270833cqw; z-index: 0; width: 16.19375cqw; height: 6.4416667cqw; object-fit: cover }
+.arrow-order { position: absolute; left: 8.4027778cqw; bottom: 0cqw; z-index: 1; width: 2.7083333cqw; height: 2.2222222cqw; object-fit: cover }
+.label-order { color: #000000; font-size: 1.8055556cqw; font-family: FontQu Smile; line-height: 1.5; position: absolute; transform: rotate(-10.03deg); transform-origin: 0 0; left: 3.1944444cqw; bottom: 2.1652778cqw; z-index: 2 }
+.tag-revisions { width: 17.8965278cqw; height: 10.2145833cqw; position: absolute; left: 29.375cqw; top: 5.2083333cqw; z-index: 3 }
+.paper-revisions { position: absolute; transform: rotate(174.86deg); transform-origin: 0 0; left: 17.8965278cqw; bottom: -2.6416667cqw; z-index: 0; width: 16.19375cqw; height: 6.4416667cqw; object-fit: cover }
+.arrow-revisions { position: absolute; transform: rotate(25.75deg); transform-origin: 0 0; left: 1.4784722cqw; bottom: 0.7479167cqw; z-index: 1; width: 2.5cqw; height: 3.4027778cqw; object-fit: cover }
+.label-revisions { color: #000000; font-size: 1.8055556cqw; font-family: FontQu Smile; line-height: 1.5; position: absolute; transform: rotate(-7.41deg); transform-origin: 0 0; left: 3.3236111cqw; bottom: 4.2243056cqw; z-index: 2 }
+.tag-brief { width: 17.4277778cqw; height: 12.0451389cqw; position: absolute; left: 30.5555556cqw; top: 12.1527778cqw; z-index: 4 }
+.paper-brief { position: absolute; transform: rotate(22.03deg); transform-origin: 0 0; left: 2.4159722cqw; bottom: 5.6034722cqw; z-index: 0; width: 16.19375cqw; height: 6.4416667cqw; object-fit: cover }
+.arrow-brief { position: absolute; left: 5.5611111cqw; bottom: 0.8041667cqw; z-index: 1; width: 3.3333333cqw; height: 3.2638889cqw; object-fit: cover }
+.label-brief { color: #000000; font-size: 1.8055556cqw; font-family: FontQu Smile; line-height: 1.5; position: absolute; transform: rotate(18.47deg); transform-origin: 0 0; left: 4.1229167cqw; bottom: 6.0819444cqw; z-index: 2 }
+
+/* About panel from MasterGo 关于我 13:13579. It moves above the sticky hero,
+   while the shared header remains the top-most layer. */
+.about-panel { position: relative; z-index: 3; min-height: calc(100svh - 5cqw); padding-top: 9.3055556cqw; padding-bottom: 9.3055556cqw; background: #f6f4f0; }
+.resume-card { position: relative; width: 56.9444444cqw; aspect-ratio: 820 / 448; height: auto; margin: 0 auto; overflow: hidden; border-radius: .4166667cqw; background: #fff; box-shadow: .1388889cqw .1388889cqw 0 #d8cdc0; color: #000; }
+.resume-card::before, .resume-card::after { position: absolute; z-index: 2; right: 0; left: 0; height: 1px; border-top: 1px dashed #251d1f; content: ""; }
+.resume-card::before { top: 2.0833333cqw; }
+.resume-card::after { bottom: 2.0833333cqw; }
+.resume-rail { position: absolute; z-index: 3; top: 0; bottom: 0; border-left: 1px dashed #251d1f; }
+.rail-left { left: 2.0833333cqw; }
+.rail-middle { left: 17.7777778cqw; }
+.rail-right { right: 2.0833333cqw; }
+.resume-spine { position: absolute; z-index: 4; top: .6944444cqw; bottom: .6944444cqw; left: .6944444cqw; display: flex; flex-direction: column; justify-content: space-between; }
+.resume-spine i { display: block; width: .8333333cqw; height: .8333333cqw; border-radius: 50%; background: #f6f4f0; box-shadow: inset .1388889cqw 0 0 #d8cdc0; }
+.resume-left { position: absolute; top: 0; bottom: 0; left: 0; width: 17.7777778cqw; }
+.resume-year, .resume-label, .resume-signature, .resume-about-label { position: absolute; font-family: "SmileySans Oblique"; font-size: .8333333cqw; line-height: 1.2; }
+.resume-year { top: .5555556cqw; left: 2.8472222cqw; letter-spacing: .0416667cqw; }
+.resume-label { top: .5555556cqw; right: .9722222cqw; }
+.resume-label { right: auto; left: 14.5138889cqw; }
+.resume-portrait { position: absolute; top: 2.2916667cqw; left: 2.0833333cqw; width: 15.6944444cqw; aspect-ratio: 226 / 385; height: auto; object-fit: cover; }
+.resume-signature { right: auto; bottom: .5555556cqw; left: 2.0833333cqw; width: 15.6944444cqw; text-align: center; letter-spacing: .0416667cqw; }
+.resume-right { position: absolute; top: 0; right: 2.0833333cqw; bottom: 0; left: 17.7777778cqw; }
+.resume-right::after { position: absolute; top: 9.5138889cqw; right: 0; left: 0; border-top: 1px dashed #251d1f; content: ""; }
+.resume-about-label { top: .5555556cqw; left: 17.7777778cqw; }
+.resume-intro { position: absolute; top: 3.3333333cqw; left: 1.3888889cqw; }
+.resume-intro h2 { margin: 0 0 1.3194444cqw; font-family: "SmileySans Oblique"; font-size: 1.1111111cqw; font-weight: 400; line-height: 1.2; }
+.resume-intro p, .resume-experience p { margin: 0 0 .7638889cqw; color: rgba(0,0,0,.82); font-family: "Source Han Sans CN", sans-serif; font-size: .8333333cqw; font-weight: 350; line-height: 1.2; white-space: nowrap; }
+.resume-experience { position: absolute; top: 10.7638889cqw; right: 0; left: 0; height: 20.3472222cqw; padding: 0 1.3888889cqw; }
+.resume-experience-heading { display: grid; grid-template-columns: 5.9027778cqw max-content; align-items: baseline; column-gap: 1.25cqw; margin-bottom: 1.1111111cqw; }
+.resume-experience time, .resume-experience h3 { margin: 0; font-family: "SmileySans Oblique"; font-size: 1.1111111cqw; font-weight: 400; line-height: 1.2; white-space: nowrap; }
+
+/* Contact stays fixed behind the scrolling About panel. Once About reaches the
+   header edge, it continues upward and exposes this final canvas from below. */
+.contact-panel { --ground-height: 5.2777778cqw; position: fixed; z-index: 1; top: 5cqw; right: 0; bottom: 0; left: 0; overflow: hidden; background: #fff; }
+.contact-scroll-spacer { position: relative; z-index: 0; height: calc(100svh - 5cqw); }
+.portfolio.is-contact-revealed .home-content { visibility: hidden; }
+.contact-ground { position: absolute; z-index: 0; right: 0; bottom: 0; left: 0; height: var(--ground-height); background: #f6f4f0; }
+.contact-art { position: absolute; z-index: 1; bottom: 2.0833333cqw; left: 4cqw; width: min(64cqw, calc((100svh - 11cqw) * 1.5)); line-height: 0; }
+.contact-art img { display: block; width: 100%; height: auto; }
+.contact-art .contact-bubble { position: absolute; z-index: 2; top: 1.3636364%; left: 50%; width: 21.4141414%; height: auto; }
+.contact-content { position: absolute; z-index: 2; top: calc((100% - var(--ground-height)) / 2); transform: translateY(-50%); left: 75.6944444cqw; display: flex; flex-direction: column; align-items: flex-start; gap: 1.8055556cqw; width: 22cqw; }
+.contact-qrcode { flex: none; width: 9.375cqw; padding: 0; }
+.contact-qrcode img { display: block; width: 100%; height: auto; }
+.contact-details { display: flex; flex-direction: column; align-items: flex-start; gap: 1.8055556cqw; width: 100%; padding: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.copy-contact { position: relative; display: flex; align-items: center; gap: .6944444cqw; width: 100%; margin: 0; padding: 0; border: 0; background: transparent; color: #000; font: inherit; text-align: left; cursor: copy; }
+.contact-value, .resume-download { font-family: "Source Han Sans CN", sans-serif; font-size: .9722222cqw; font-weight: 400; line-height: 1.2; }
+.contact-icon { flex: none; width: 1.3888889cqw; height: 1.3888889cqw; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.4; }
+.contact-value { white-space: nowrap; }
+.copy-tip { position: absolute; bottom: calc(100% + .4166667cqw); left: 0; z-index: 2; padding: .3472222cqw .5555556cqw; border-radius: .2777778cqw; background: #000; color: #fff; font-family: "Source Han Sans CN", sans-serif; font-size: .6944444cqw; font-weight: 400; line-height: 1.2; opacity: 0; pointer-events: none; transform: translateY(.2777778cqw); transition: opacity 160ms ease, transform 160ms ease; white-space: nowrap; }
+.copy-contact:hover .copy-tip, .copy-contact:focus-visible .copy-tip { opacity: 1; transform: translateY(0); }
+.resume-download { display: inline-flex; align-items: center; gap: .6944444cqw; margin: 0; padding: 0; color: #000; text-decoration: none; }
+.resume-download:hover span, .resume-download:focus-visible span { text-decoration: underline; text-underline-offset: .4166667cqw; }
+.contact-copyright { position: absolute; z-index: 2; right: 12cqw; bottom: .9722222cqw; left: 12cqw; margin: 0; color: rgba(0,0,0,.58); font-family: "Source Han Sans CN", sans-serif; font-size: max(10px, .4861111cqw); font-weight: 400; line-height: 1.3; text-align: center; }

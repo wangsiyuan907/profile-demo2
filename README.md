@@ -1,15 +1,20 @@
-# 2026 Portfolio - Demo 2
+# Demo4 portfolio deployment
 
-第二版个人作品集，借鉴 Jon Howell 的暗色基调、巨型标题、错落作品卡片与沉浸式项目阅读方式。
+This repository deploys the Demo4 portfolio to the existing Cloudflare Worker
+`profile-demo2` and the custom domain `portfolio.siyuan.design`.
 
-- `index.html`：单页作品集
-- `styles.css`：双主题、响应式排版与悬浮动效
-- `app.js`：项目弹窗、卡片悬浮图片轮播与主题切换
+- Public site files are in `site/`.
+- Images and videos are kept at their original quality; deployment does not
+  transcode or recompress them.
+- The 74 MB file `asset/flora/process-final-white.mp4` exceeds the Workers
+  static-asset per-file limit, so it is stored losslessly in the existing R2
+  bucket at `demo4/asset/flora/process-final-white.mp4` and streamed by
+  `worker.js` with byte-range support.
+- Internal QA screenshots, MasterGo references, and project guidance documents
+  are intentionally excluded from the public site.
 
-用浏览器直接打开 `index.html` 即可预览。页面引用本作品集根目录中既有的 `02-portfolio-content` 素材，不创建重复副本。
+Deploy with:
 
-## 自定义项目封面
-
-可以在每个项目的素材文件夹内建立 `cover/` 文件夹，并放入 `cover1`、`cover2`、`cover3` 等自制封面，保留原有图片或视频扩展名，例如 `cover1.jpg`、`cover2.png`。案例项目也兼容原有的 `01-cover/`、`05-cover/` 等编号封面文件夹。页面会优先使用这些文件作为卡片封面，并在鼠标悬浮时每秒轮播。
-
-新增或替换封面后，需要同步更新 `assets-manifest.js`，让静态页面识别新素材；把封面放好后告诉我即可。
+```sh
+npx wrangler deploy
+```

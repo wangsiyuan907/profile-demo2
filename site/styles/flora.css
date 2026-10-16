@@ -1,0 +1,43 @@
+/* MasterGo node 18:8674, 1440 × 3695. */
+.flora-detail .case-body { height: 209.3055556cqw; padding-bottom: 5.5555556cqw; overflow: hidden; }
+.flora-detail .case-body-inner { height: 200.9722222cqw; background: #fff; overflow: hidden; }
+.flora-detail .case-sidebar h1 { font-size: 2.3611111cqw; }
+.flora-facts { position: relative; flex: none; height: 17.2222222cqw; background: #fff; }
+.flora-logo { position: absolute; left: 7.3611111cqw; top: 6.5972222cqw; width: 12.7777778cqw; height: auto; }
+.flora-facts .case-facts { position: absolute; left: 27.6388889cqw; top: 5cqw; font-size: 1.1111111cqw; }
+.flora-keyframes { display: grid; grid-template-columns: repeat(2, 31.25cqw); gap: 2.7777778cqw; height: 36.1111111cqw; }
+.flora-keyframes figure { position: relative; width: 31.25cqw; height: 36.1111111cqw; margin: 0; overflow: hidden; background: #f6f4f0; }
+.flora-keyframes img { position: absolute; left: -.0694444cqw; top: -7.0138889cqw; width: 31.3194444cqw; max-width: none; height: auto; }
+.flora-copy { position: relative; height: 18.1944444cqw; }
+.flora-copy h2, .flora-final-copy h2 { margin: 0; font-family: "Source Han Sans CN", sans-serif; font-size: 1.8055556cqw; font-weight: 400; line-height: 1.2; letter-spacing: .0902778cqw; }
+.flora-copy p, .flora-final-copy p { margin: 0; font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 300; line-height: 1.5; }
+.flora-keyframe-copy h2 { position: absolute; left: 2.7777778cqw; top: 5.2083333cqw; }
+.flora-keyframe-copy p { position: absolute; left: 2.7777778cqw; top: 9.5833333cqw; width: 41.3194444cqw; }
+.flora-video { position: absolute; margin: 0; overflow: hidden; background: #f6f4f0; }
+.flora-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.flora-video figcaption { position: absolute; right: .6944444cqw; bottom: .6944444cqw; z-index: 1; font-family: "Source Han Sans CN", sans-serif; font-size: .8333333cqw; font-weight: 300; line-height: 1.5; }
+.flora-process { position: relative; flex: none; height: 73.8194444cqw; }
+.flora-process-series { left: 0; top: 0; width: 31.25cqw; height: 55.5555556cqw; }
+.flora-process-final { left: 34.0277778cqw; top: 0; width: 31.25cqw; height: 31.25cqw; }
+.flora-process-final video, .flora-process-cap video, .flora-final-video video { object-position: center center; }
+.flora-process-cap { left: 34.0277778cqw; top: 33.9583333cqw; width: 31.25cqw; height: 21.5277778cqw; }
+.flora-process-cap figcaption { color: #fff; }
+.flora-process-copy { position: absolute; left: 0; top: 55.5555556cqw; width: 65.2777778cqw; height: 18.2638889cqw; }
+.flora-process-copy h2 { position: absolute; left: 4.5138889cqw; top: 5.2083333cqw; }
+.flora-process-copy p { position: absolute; left: 4.5138889cqw; top: 9.5833333cqw; width: 56.25cqw; }
+.flora-final { position: relative; flex: none; height: 73.8194444cqw; }
+.flora-final-video { left: 0; top: 0; width: 31.25cqw; height: 55.5555556cqw; }
+.flora-final-video figcaption { left: 1.0416667cqw; right: 1.0416667cqw; bottom: .625cqw; }
+.flora-final-copy { position: absolute; left: 34.0277778cqw; top: 0; width: 31.25cqw; height: 55.5555556cqw; }
+.flora-final-copy h2 { position: absolute; left: 0; top: 41.3194444cqw; }
+.flora-final-copy p { position: absolute; left: 0; top: 48.4722222cqw; width: 31.25cqw; }
+.flora-other-cases { padding: 2.2916667cqw 2.7777778cqw 0; }
+.flora-other-cases h2 { margin-left: .2777778cqw; font-family: "SmileySans Oblique"; font-size: 2.0833333cqw; font-weight: 400; line-height: 1.5; letter-spacing: .1041667cqw; }
+.flora-other-cases .other-cases-grid { gap: 1.3888889cqw; margin-top: 1.7361111cqw; }
+.flora-other-cases .other-cases-grid a { flex: 0 0 22.5694444cqw; aspect-ratio: 325 / 390; background: #fff; }
+.flora-other-cases .other-aupres .other-cover { inset: 0; width: 100%; height: 100%; }
+.flora-other-cases .other-aqualabel .other-cover { left: -3.3333333cqw; top: -5.4166667cqw; width: 29.1666667cqw; height: 29.1666667cqw; }
+.flora-other-cases .other-dabao .other-cover { left: -2.1527778cqw; top: -12.3611111cqw; width: 26.8055556cqw; height: 47.6388889cqw; }
+.flora-other-cases .other-ip .other-cover { left: -4.5138889cqw; top: 0; width: 31.6666667cqw; height: 18.8888889cqw; }
+.flora-other-cases .detail-copyright { position: absolute; left: 0; right: 0; bottom: 2.8472222cqw; margin: 0; }
+@media (max-width: 760px) { .flora-copy p, .flora-final-copy p { line-height: 1.4; } }

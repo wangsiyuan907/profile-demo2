@@ -1,0 +1,93 @@
+/* MasterGo node 15:00095, 1440 × 6874. Shared sticky shell and footer live in case-detail.css. */
+.mufe-cny-detail .case-body { padding-bottom: 3.0555556cqw; }
+
+.mufe-cny-role-block {
+  display: flex;
+  align-items: flex-start;
+  height: 16.6666667cqw;
+  padding: 5cqw 0 0 7.4305556cqw;
+}
+
+.mufe-cny-role-block img {
+  flex: none;
+  width: 10.8333333cqw;
+  height: auto;
+  margin-top: .9027778cqw;
+}
+
+.mufe-cny-role-block p {
+  margin-left: 8.4722222cqw;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.1111111cqw;
+  font-weight: 300;
+  line-height: 2;
+}
+.mufe-cny-role-block .case-facts { margin-left: 8.4722222cqw; }
+
+.mufe-cny-background-copy {
+  min-height: 18.1944444cqw;
+  padding-left: 23.8888889cqw;
+}
+
+.mufe-cny-background-copy p { padding-right: 0; }
+
+.mufe-cny-brief-copy {
+  min-height: 21.5277778cqw;
+  padding-left: 23.8888889cqw;
+  padding-right: 0;
+}
+
+.mufe-cny-studio-copy {
+  min-height: 23.2638889cqw;
+  padding-left: 23.8194444cqw;
+  padding-right: 3.0555556cqw;
+}
+
+.mufe-cny-assets-copy {
+  min-height: 19.8611111cqw;
+  padding-left: 23.4027778cqw;
+  padding-right: 0;
+}
+
+.mufe-cny-store-copy,
+.mufe-cny-promo-copy {
+  min-height: 20.3472222cqw;
+  padding-top: 5.5555556cqw;
+  padding-left: 23.8194444cqw;
+  padding-right: 0;
+}
+
+.mufe-cny-result {
+  position: relative;
+  height: 31.25cqw;
+  overflow: hidden;
+  background: #251d1f;
+}
+
+.mufe-cny-result > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mufe-cny-asset-link {
+  position: absolute;
+  left: 4.1666667cqw;
+  bottom: 2.5cqw;
+  width: 15.9722222cqw;
+  height: 2.0833333cqw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: not-allowed;
+}
+
+.mufe-cny-detail .other-givenchy { background: #f6f4f0; }
+.mufe-cny-detail .other-benefit { background: #fe0066; }
+.mufe-cny-detail .other-hdskin { background: #e9c7af; }
+
+@media (max-width: 760px) {
+  .mufe-cny-role-block p { line-height: 1.65; }
+}

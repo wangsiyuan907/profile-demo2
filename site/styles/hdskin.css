@@ -1,0 +1,17 @@
+/* MasterGo 13:77513; shared shell and interactions stay in case-detail.css. */
+.hdskin-detail .case-body { padding-bottom: 3.3333333cqw; }
+.hdskin-role-block { display: flex; height: 16.6666667cqw; padding: 5cqw 0 0 10.4166667cqw; gap: 12.2222222cqw; }
+.hdskin-role-block img { flex: none; width: 12.2916667cqw; height: 5.5555556cqw; margin-top: .5555556cqw; }
+.hdskin-role-block p { font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 300; line-height: 2; }
+.hdskin-role-block .case-facts { flex: none; }
+.hdskin-background { min-height: 19.8611111cqw; }
+.hdskin-background p { margin-right: 6.6666667cqw; }
+.hdskin-applications { min-height: 19.8611111cqw; padding-left: 23.4027778cqw; }
+.hdskin-touchpoints { min-height: 20.3472222cqw; padding-top: 5.5555556cqw; padding-left: 23.8194444cqw; }
+.hdskin-touchpoints p { margin-top: 2.2777778cqw; margin-right: 12.5cqw; }
+.hdskin-result { position: relative; height: 31.25cqw; overflow: hidden; background: #fef3e3; }
+.hdskin-result-image { position: absolute; top: 0; right: 0; width: 51.4583333cqw; height: auto; }
+.hdskin-result-copy { position: relative; width: 24.4444444cqw; margin-left: 4.1666667cqw; padding-top: 6.1805556cqw; }
+.hdskin-result-copy h2 { font-family: "Source Han Sans CN", sans-serif; font-size: 1.9444444cqw; font-weight: 400; line-height: 1.2; letter-spacing: .0972222cqw; }
+.hdskin-result-copy p { margin-top: 1.9305556cqw; font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 300; line-height: 1.5; letter-spacing: .0555556cqw; }
+.asset-library-link { position: absolute; bottom: 2.7777778cqw; left: 4.1666667cqw; padding: 0; border: 0; background: transparent; color: #000; font-family: "Source Han Sans CN", sans-serif; font-size: 1.25cqw; font-weight: 350; line-height: 1.5; letter-spacing: .0625cqw; cursor: default; }

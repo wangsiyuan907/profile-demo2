@@ -1,16 +1,3 @@
-# Local system and working files
 .DS_Store
-**/.DS_Store
-v1/
-
-# Credentials and local configuration
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-
-# Package and build caches
+.wrangler/
 node_modules/
-dist/
-.cache/

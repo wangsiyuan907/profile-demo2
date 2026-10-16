@@ -1,0 +1,104 @@
+/* MasterGo 13:89435; shared detail shell and footer behavior live in case-detail.css. */
+.benefit-detail .case-body { padding-bottom: 3.1944444cqw; }
+
+.benefit-role-block {
+  display: flex;
+  align-items: flex-start;
+  height: 18.8194444cqw;
+  padding: 5cqw 0 0 10.4166667cqw;
+}
+
+.benefit-role-block img {
+  flex: none;
+  width: 12.2916667cqw;
+  height: auto;
+  margin-top: 2.5cqw;
+}
+
+.benefit-role-block p {
+  margin-left: 12.2222222cqw;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.1111111cqw;
+  font-weight: 300;
+  line-height: 2;
+}
+.benefit-role-block .case-facts { flex: none; margin-left: 12.2222222cqw; }
+
+.benefit-background-copy { min-height: 19.8611111cqw; }
+.benefit-background-copy p { padding-right: 6.6666667cqw; }
+
+.benefit-transformation-copy {
+  min-height: 21.5277778cqw;
+  padding-right: 4.1666667cqw;
+}
+
+.benefit-production-copy {
+  min-height: 19.9305556cqw;
+  padding-left: 23.8194444cqw;
+  padding-right: 3.0555556cqw;
+}
+
+.benefit-layouts-copy {
+  min-height: 19.8611111cqw;
+  padding-left: 23.4027778cqw;
+  padding-right: 4.1666667cqw;
+}
+
+.benefit-touchpoints-copy {
+  min-height: 20.3472222cqw;
+  padding-top: 5.5555556cqw;
+  padding-left: 23.8194444cqw;
+  padding-right: 9.3055556cqw;
+}
+
+.benefit-result {
+  position: relative;
+  height: 31.25cqw;
+  overflow: hidden;
+  background: #f6f4f0;
+}
+
+.benefit-result-background,
+.benefit-result-foreground {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 31.25cqw;
+  max-width: none;
+  object-fit: fill;
+}
+
+.benefit-result-background {
+  right: 0;
+  width: 65.2777778cqw;
+}
+
+.benefit-result-foreground {
+  left: 0;
+  width: 57.8472222cqw;
+}
+
+.benefit-result-copy {
+  position: absolute;
+  top: 6.1805556cqw;
+  left: 35.9027778cqw;
+  width: 23.75cqw;
+}
+
+.benefit-result-copy h2 {
+  margin: 0;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.9444444cqw;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .0972222cqw;
+}
+
+.benefit-result-copy p {
+  margin-top: 2.0138889cqw;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.1111111cqw;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .0555556cqw;
+}

@@ -1,0 +1,73 @@
+/* Source: MasterGo 13:13934. Dimensions below converted proportionally from 100cqw.
+   Header intentionally reuses the smaller, previously approved homepage header. */
+.case-detail { --nav-height: 5cqw; --other-height: 41.4583333cqw; }
+.case-detail h2 { margin: 0; font-weight: 400; }
+.case-detail .nav-item { text-decoration: none; }
+.detail-foreground { position: relative; z-index: 2; display: flex; align-items: flex-start; background: #fff; }
+.case-sidebar { position: sticky; top: var(--nav-height); flex: 0 0 29.1666667cqw; height: calc(100svh - var(--nav-height)); padding: 2.7777778cqw 0.9027778cqw 0 2.8472222cqw; background: #fff; }
+.back-to-cases { display: flex; gap: 0.3472222cqw; align-items: center; color: #000; text-decoration: none; font-family: "Source Han Sans CN", sans-serif; font-size: 1.25cqw; font-weight: 350; line-height: 1.5; letter-spacing: 0.0625cqw; }
+.case-sidebar h1 { margin-top: 4.6527778cqw; font-family: "SmileySans Oblique"; font-size: 2.3611111cqw; font-weight: 400; line-height: 1.5; white-space: nowrap; }
+.case-brand-year { margin-top: 1.6666667cqw; font-family: "SmileySans Oblique"; font-size: 1.25cqw; line-height: 1.5; letter-spacing: 0.0625cqw; }
+.case-summary { margin-top: 2.0138889cqw; font-family: "Source Han Sans CN", sans-serif; font-size: 0.9722222cqw; font-weight: 350; line-height: 1.5; }
+.case-body { flex: 1; min-width: 0; padding: 2.7777778cqw 2.7777778cqw 3.0555556cqw; background: #fff; }
+.case-body-inner { display: flex; flex-direction: column; border-radius: 0.4166667cqw; overflow: hidden; }
+.case-body section { width: 100%; }
+.case-wide-image { display: block; width: 100%; height: auto; }
+.case-role-block { display: flex; align-items: flex-start; height: 16.6666667cqw; padding: 5cqw 0 0 8.6805556cqw; gap: 9.0277778cqw; }
+.givenchy-logo { width: 15.6944444cqw; height: auto; margin-top: 2.6388889cqw; margin-right: 1.5277778cqw; flex: none; }
+.case-role-block p { font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 350; line-height: 2; }
+.case-facts { margin: 0; font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 300; line-height: 2; }
+.case-facts > div { display: grid; grid-template-columns: max-content max-content; column-gap: 2.0833333cqw; width: max-content; max-width: 100%; border-bottom: .0694444cqw solid #f5f3ef; }
+.case-facts dt, .case-facts dd { margin: 0; }
+.case-facts dt { color: #626262; }
+.case-copy { display: flex; flex-direction: column; padding: 5.2083333cqw 0 0 23.8888889cqw; }
+.case-copy h2, .iteration-copy h2, .result-copy h2 { font-family: "Source Han Sans CN", sans-serif; font-size: 1.8055556cqw; line-height: 1.2; letter-spacing: 0.0902778cqw; }
+.case-copy p, .iteration-copy p, .result-copy p { font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 350; line-height: 1.5; }
+.case-copy p { margin-top: 2.2222222cqw; }
+.background-copy { min-height: 19.8611111cqw; }
+.constraints-copy { min-height: 21.5277778cqw; }
+.safe-copy { min-height: 19.9305556cqw; padding-left: 23.8194444cqw; padding-right: 3.0555556cqw; }
+.case-iterations { display: flex; flex-direction: column; gap: 2.7777778cqw; }
+.iteration { display: flex; height: 31.25cqw; background: #f6f4f0; overflow: hidden; }
+.iteration-copy { flex: none; width: 22.7777778cqw; padding: 5.2083333cqw 0 0 4.1666667cqw; }
+.iteration-copy p { margin-top: 2.4305556cqw; width: 17.7083333cqw; }
+.iteration-density > img { flex: none; width: 35.5555556cqw; height: 26.7cqw; margin: 4.5138889cqw 0 0 4.1666667cqw; }
+.iteration-gifting .iteration-copy { padding-left: 5cqw; padding-top: 5.2777778cqw; }
+.iteration-gifting > img { flex: none; width: 22.2222222cqw; height: 27.4305556cqw; margin: 3.8194444cqw 0 0 10.8333333cqw; }
+.case-touchpoints { display: flex; flex-direction: column; gap: 3.2638889cqw; }
+.touchpoints-copy { min-height: 18.3333333cqw; padding-top: 5.2777778cqw; padding-left: 23.8194444cqw; }
+.case-result { padding-top: 2.7777778cqw; }
+.result-canvas { position: relative; height: 31.25cqw; overflow: hidden; background: #f6f4f0; }
+.result-person { position: absolute; left: 0; top: 0; width: 49.9305556cqw; height: auto; }
+.result-background { position: absolute; right: 0; top: 0; width: 21.25cqw; height: 31.25cqw; }
+.result-copy { position: relative; margin-left: 32.6388889cqw; padding-top: 7.0833333cqw; }
+.result-copy h2 { font-size: 1.9444444cqw; letter-spacing: 0.0972222cqw; white-space: nowrap; }
+.result-copy p { margin-top: 2.2222222cqw; margin-right: 5.2083333cqw; letter-spacing: 0.0555556cqw; }
+.other-cases-spacer { height: var(--other-height); pointer-events: none; }
+.other-cases { position: fixed; bottom: 0; left: 0; width: 100%; height: var(--other-height); z-index: 1; background: #f6f4f0; padding: 5.1388889cqw 2.7777778cqw 2.8472222cqw; }
+.other-cases h2 { font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 350; line-height: 1.5; letter-spacing: 0.0555556cqw; margin-left: 0.2777778cqw; }
+.other-cases-grid { display: flex; gap: 1.3888889cqw; margin-top: 1.3888889cqw; }
+.other-cases-grid a { position: relative; display: block; flex: 1; min-width: 0; aspect-ratio: 440 / 390; overflow: hidden; border-radius: 0.4166667cqw; color: #000; text-decoration: none; }
+.other-cases-grid .other-cover { position: absolute; display: block; max-width: none; object-fit: cover; }
+.other-hdskin { background: #e9c7af; }
+.other-hdskin .other-cover { width: 100%; height: auto; left: 0; top: 0; }
+.other-givenchy { background: #f6f4f0; }
+.other-givenchy .other-cover { width: 100%; height: auto; left: 0; top: 0; }
+.other-benefit { background: #fe0066; }
+.other-benefit .other-cover { width: 100%; height: auto; left: 0; top: 0; }
+.other-mufe { background: #fe0066; }
+.other-mufe .other-cover { width: 100%; height: auto; left: 0; top: 0; }
+.other-caption { position: absolute; inset: auto 0 0; height: 9.7222222cqw; background: rgba(255,255,255,.9); padding: 1.3888889cqw 1.3194444cqw; }
+.other-caption strong { display: block; font-family: "SmileySans Oblique"; font-size: 2.0833333cqw; font-weight: 400; line-height: 1.07; letter-spacing: .1041667cqw; }
+.other-caption span { display: block; margin-top: .8333333cqw; font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; line-height: 1.5; letter-spacing: .0555556cqw; }
+.other-cases-grid .other-arrow { position: absolute; right: 1.4236111cqw; bottom: 1.36875cqw; width: 1.25cqw; height: auto; }
+.other-cases-grid a:hover .other-arrow, .other-cases-grid a:focus-visible .other-arrow { animation: other-arrow-nudge 1100ms ease-in-out infinite; }
+@keyframes other-arrow-nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(.2777778cqw); } }
+@media (prefers-reduced-motion: reduce) { .other-cases-grid a:hover .other-arrow, .other-cases-grid a:focus-visible .other-arrow { animation: none; } }
+.detail-copyright { margin-top: 2.7083333cqw; text-align: center; color: #686868; font-family: "Source Han Sans CN", sans-serif; font-size: max(10px, 0.5555556cqw); font-weight: 350; line-height: 1.3; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.case-summary, .case-role-block p, .case-copy p, .iteration-copy p, .result-copy p { font-weight: 300; }
+.back-to-cases-label { display: inline-block; }
+.back-to-cases:hover .back-to-cases-label { animation: back-label-nudge 1100ms ease-in-out infinite; }
+@keyframes back-label-nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(.2777778cqw); } }
+@media (prefers-reduced-motion: reduce) { .back-to-cases:hover .back-to-cases-label { animation: none; } }
