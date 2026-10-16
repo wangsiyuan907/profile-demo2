@@ -36,6 +36,10 @@
     }
     function open() {
       controllers.forEach(controller => controller.close());
+      panel.querySelectorAll('img[data-src]').forEach(image => {
+        image.src = image.dataset.src;
+        delete image.dataset.src;
+      });
       panel.hidden = false;
       setLocked(true);
       resize();
