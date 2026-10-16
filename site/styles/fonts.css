@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Source Han Sans CN";
+  src: url("../asset/fonts/SourceHanSansCN-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SmileySans Oblique";
+  src: url("../asset/fonts/SmileySans-Oblique.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "FontQu Smile";
+  src: url("../asset/fonts/FontQu-Smile.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Source Han Sans CN";
+  src: url("../asset/fonts/SourceHanSansCN-Normal.otf") format("opentype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Han Sans CN";
+  src: url("../asset/fonts/SourceHanSansCN-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}

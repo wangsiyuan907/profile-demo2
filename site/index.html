@@ -1,40 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Siyuan 视觉设计师作品集" />
-    <title>SIYUAN - Visual Designer</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="wordmark" href="#top">SIYUAN<span>®</span></a>
-      <nav aria-label="主导航"><a href="#work">项目</a><a href="#library">资产库</a><a href="#collaboration">合作</a><a href="#contact">联系</a></nav>
-      <button class="theme-toggle" type="button" aria-label="切换浅色或深色模式"><span class="toggle-sun">☼</span><span class="toggle-moon">◐</span></button>
-    </header>
-    <main id="top">
-      <section class="hero folder-hero" aria-label="SIYUAN 作品集首页">
-        <div class="portfolio-folder">
-          <img class="folder-back" src="folder/folder-back.svg" alt="" />
-          <div class="folder-card-stack" aria-label="品牌项目卡片">
-            <button class="brand-card brand-card-benefit" type="button" data-project="givenchy-2026-cny"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/givenchy-2026-cny/07-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/givnechy-logo.svg" alt="Givenchy" /></button>
-            <button class="brand-card brand-card-givenchy" type="button" data-project="mufe-2024-hdskin"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/mufe-2024-hdskin/05-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/mufe-logo.svg" alt="MAKE UP FOR EVER" /></button>
-            <button class="brand-card brand-card-mufe" type="button" data-project="mufe-2025-cny"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/mufe-2025-cny/05-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/mufe-logo.svg" alt="MAKE UP FOR EVER" /></button>
-            <button class="brand-card brand-card-benefit-alt" type="button" data-project="benefit-2023-d11"><img class="brand-card-base" src="folder/card.svg" alt="" /><img class="brand-card-cover" src="assets/01-case-studies/deep/benefit-2023-d11/06-cover/cover1.png" alt="" /><img class="brand-card-logo" src="folder/benefit-logo.svg?v=20260818" alt="Benefit" /></button>
-          </div>
-          <img class="bulb-sticker" src="folder/light bulb.svg" alt="" />
-          <div class="folder-front"><img class="folder-art" src="folder/folder-front.svg" alt="" /><span class="eye-sticker eye-left" aria-hidden="true"><img class="eye-base" src="folder/eye.svg" alt="" /><img class="eyeball" src="folder/eyeball.svg" alt="" /></span><span class="eye-sticker eye-right" aria-hidden="true"><img class="eye-base" src="folder/eye.svg" alt="" /><img class="eyeball" src="folder/eyeball.svg" alt="" /></span><img class="folder-title" src="folder/Portfolio.svg" alt="Portfolio" /><img class="folder-name" src="folder/name.svg" alt="@SIYUAN" /></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="王思远的作品集 · 10年美妆奢品电商视觉设计">
+  <title>王思远の作品集</title>
+  <link rel="preload" href="./asset/fonts/SmileySans-Oblique.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/cases.css">
+  <link rel="stylesheet" href="./styles/cursors.css">
+  <script src="./scripts/navigation.js" defer></script>
+  <script src="./scripts/card-shadows.js" defer></script>
+  <script src="./scripts/cases.js" defer></script>
+  <script src="./scripts/routes.js" defer></script>
+</head>
+<body>
+<div class="portfolio" data-node-id="13:9752" data-view="home">
+  <header class="site-header">
+    <a class="site-brand" href="./index.html" aria-label="返回首页">王思远の作品集</a>
+    <nav class="site-nav" aria-label="作品集导航">
+      <button class="nav-item nav-home" type="button" data-view-target="home" aria-pressed="true" aria-current="page"><span class="nav-label">首&nbsp;&nbsp;页</span></button>
+      <button class="nav-item" type="button" data-view-target="cases" aria-pressed="false"><span class="nav-label">案例</span></button>
+      <button class="nav-item" type="button" data-view-target="collaboration" aria-pressed="false"><span class="nav-label">协作</span></button>
+      <button class="nav-item" type="button" data-view-target="about" aria-pressed="false"><span class="nav-label">关于</span></button>
+      <button class="nav-item" type="button" data-view-target="contact" aria-pressed="false"><span class="nav-label">联系</span></button>
+    </nav>
+  </header>
+  <section class="cases-panel" id="cases" aria-label="核心案例" hidden>
+    <div class="cases-stage">
+      <img class="case-preview preview-givenchy" src="./asset/cases/givenchy-preview.png" alt="纪梵希项目视觉示例" draggable="false">
+      <img class="case-preview preview-hdskin" src="./asset/cases/hdskin-preview.png" alt="玫珂菲粉饼项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-givenchy" data-case="givenchy" aria-expanded="false" aria-describedby="role-givenchy">
+        <span class="case-number">01</span><span class="case-name">纪梵希 2026中国新年</span><span class="case-brand">GIVENCHY</span>
+        <span class="case-role" id="role-givenchy">项目视觉主导与节点整合</span>
+      </button>
+      <button type="button" class="case-card case-hdskin" data-case="hdskin" aria-expanded="false" aria-describedby="role-hdskin">
+        <span class="case-number">02</span><span class="case-name">玫珂菲HD Skin 丝绒粉饼</span><span class="case-brand">MAKE UP FOR EVER</span>
+        <span class="case-role" id="role-hdskin">视觉主导与资产构建</span>
+      </button>
+      <img class="case-preview preview-benefit" src="./asset/cases/benefit-preview.png" alt="贝玲妃双11项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-benefit" data-case="benefit" aria-expanded="false" aria-describedby="role-benefit">
+        <span class="case-number">03</span><span class="case-name">贝玲妃 2023双11大促</span><span class="case-brand">BENEFIT</span>
+        <span class="case-role" id="role-benefit">独立创意与全案视觉设计</span>
+      </button>
+      <img class="case-preview preview-mufe-cny" src="./asset/cases/mufe-cny-preview.png" alt="玫珂菲2025新年项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-mufe-cny" data-case="mufe-cny" aria-expanded="false" aria-describedby="role-mufe-cny">
+        <span class="case-number">04</span><span class="case-name">玫珂菲2025中国新年</span><span class="case-brand">MAKE UP FOR EVER</span>
+        <span class="case-role" id="role-mufe-cny">场景概念提案与全案视觉</span>
+      </button>
+    </div>
+  </section>
+  <section class="cases-panel collaboration-panel" id="collaboration" aria-label="协作项目" hidden>
+    <div class="cases-stage">
+      <img class="case-preview preview-aupres" src="./asset/collaboration/aupres-preview.png" alt="AUPRES项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-aupres" data-case="aupres" aria-expanded="false" aria-describedby="role-aupres">
+        <span class="case-number">01</span><span class="case-name">AUPRES 双泵精华</span><span class="case-brand">AUPRES</span>
+        <span class="case-role" id="role-aupres">产品结构与视觉资产</span>
+      </button>
+      <img class="case-preview preview-aqualabel" src="./asset/collaboration/aqualabel-preview.png" alt="AQUALABEL项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-aqualabel" data-case="aqualabel" aria-expanded="false" aria-describedby="role-aqualabel">
+        <span class="case-number">02</span><span class="case-name">水之印系列产品视觉构建</span><span class="case-brand">AQUALABEL</span>
+        <span class="case-role" id="role-aqualabel">产品视觉构建</span>
+      </button>
+      <img class="case-preview preview-gucci" src="./asset/collaboration/gucci-preview.png" alt="GUCCI项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-gucci" data-case="gucci" aria-expanded="false" aria-describedby="role-gucci">
+        <span class="case-number">03</span><span class="case-name">Flora香水动态视觉探索</span><span class="case-brand">GUCCI</span>
+        <span class="case-role" id="role-gucci">产品视觉构建</span>
+      </button>
+      <img class="case-preview preview-dabao" src="./asset/collaboration/dabao-preview.png" alt="DABAO项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-dabao" data-case="dabao" aria-expanded="false" aria-describedby="role-dabao">
+        <span class="case-number">04</span><span class="case-name">麻将礼盒开盒动画</span><span class="case-brand">DABAO</span>
+        <span class="case-role" id="role-dabao">产品视觉构建</span>
+      </button>
+      <img class="case-preview preview-ip" src="./asset/collaboration/ip-preview.png" alt="IP项目视觉示例" draggable="false">
+      <button type="button" class="case-card case-ip" data-case="ip" aria-expanded="false" aria-describedby="role-ip">
+        <span class="case-number">05</span><span class="case-name">IP视觉探索内部提案与3D转化</span><span class="case-brand">IP</span>
+        <span class="case-role" id="role-ip">IP视觉探索内部提案与3D转化</span>
+      </button>
+    </div>
+  </section>
+  <main class="home-content" id="home">
+  <div
+    data-node-id="13:9762"
+    data-name="形象"
+    class="hero-art">
+    <img alt="王思远抱着猫的个人插画" fetchpriority="high" draggable="false"
+      data-node-id="13:11855"
+      data-name="image-90531402"
+      class="portrait"
+      src="./asset/images/portrait-upscaled.png"
+      title="image-90531402" />
+    <img class="tag-order original-tag" data-node-id="13:9764" src="./asset/images/tag-order-original.png" alt="图层秩序掌管人" draggable="false">
+    <img class="tag-revisions original-tag" data-node-id="13:9771" src="./asset/images/tag-revisions-original.png" alt="改稿循环幸存者" draggable="false">
+    <img class="tag-brief original-tag" data-node-id="13:9778" src="./asset/images/tag-brief-original.png" alt="甲方需求翻译官" draggable="false">
+  </div>
+
+    <div class="hero-copy">
+      <h1 class="hero-title">让复杂的需求，<br>变成清楚又好看的答案。</h1>
+      <p class="hero-description">10年美妆奢品电商视觉设计</p>
+    </div>
+  </main>
+  <section class="about-panel" id="about" aria-labelledby="about-title">
+    <article class="resume-card" data-node-id="13:09513">
+      <span class="resume-rail rail-left" aria-hidden="true"></span>
+      <span class="resume-rail rail-middle" aria-hidden="true"></span>
+      <span class="resume-rail rail-right" aria-hidden="true"></span>
+      <div class="resume-spine" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="resume-left">
+        <span class="resume-year">2026</span>
+        <span class="resume-label">RESUME</span>
+        <img class="resume-portrait" src="./asset/about/resume-portrait-peace.png" alt="王思远人物插画">
+        <span class="resume-signature">WANG SIYUAN</span>
+      </div>
+      <div class="resume-right">
+        <span class="resume-about-label">ABOUT</span>
+        <div class="resume-intro">
+          <h2 id="about-title">王思远</h2>
+          <p>北京｜10年电商视觉经验｜高端美妆｜3–4人团队管理</p>
+          <p>教育背景：长江大学｜艺术设计专业｜本科</p>
         </div>
-      </section>
-      <section class="intro section-rule"><div class="intro-overview"><p class="intro-lead">9 年电商视觉设计经验，专注品牌营销视觉与全渠道落地。</p><p class="intro-lvmh">具备 LVMH 旗下 Givenchy、MUFE、Benefit 的品牌规范与全渠道电商视觉服务经验。</p></div><ol class="career-timeline" aria-label="工作经历"><li><time>2020 至今</time><strong>上海鲲驰</strong><span>设计主管 · Givenchy / MUFE / Benefit</span></li><li><time>2018 至 2019</time><strong>中睿意德</strong><span>设计组组长 · 多品牌店铺视觉</span></li><li><time>2016 至 2018</time><strong>奢蕊时尚</strong><span>视觉设计师 · 京东全球购 / 寺库</span></li></ol></section>
-      <section class="work-section section-rule" id="work"><div class="section-heading"><h2>项目</h2><p>重点案例在前，完整展示从策略到不同触点的视觉落地。</p></div><div class="project-grid" id="project-grid"></div></section>
-      <section class="library-section section-rule" id="library"><div class="section-heading"><h2>产品资产库</h2><p>MAKE UP FOR EVER 产品可视化素材。点击任意图片，即可查看全部资产。</p></div><button class="asset-marquee" type="button" id="library-trigger" aria-label="查看完整产品资产库"><span id="asset-track"></span></button></section>
-      <section class="work-section section-rule" id="collaboration"><div class="section-heading"><h2>合作项目</h2><p>外部合作与内部创作，从产品视觉、礼盒到品牌概念。</p></div><div class="project-grid" id="collaboration-grid"></div></section>
-      <footer id="contact" class="contact"><p class="eyebrow">合作与联系</p><h2>一起做点<br />有意思的事。</h2><div class="contact-content"><img class="qr-code" src="folder/wechat-qrcode-black.svg" alt="微信二维码" /><div class="contact-details"><button class="copy-contact" type="button" data-copy="13522972710" data-copy-hint="点击复制">电话：135 2297 2710</button><button class="copy-contact" type="button" data-copy="987685224@qq.com" data-copy-hint="点击复制">邮箱：987685224@qq.com</button><button class="copy-contact" type="button" data-copy="13522972710" data-copy-hint="点击复制">微信：13522972710</button></div></div><p class="copyright">© SIYUAN 2026</p></footer>
-    </main>
-    <dialog class="project-modal" id="project-modal"><div class="modal-shell"><button class="modal-close" type="button" aria-label="关闭">×</button><div id="modal-content"></div></div></dialog>
-    <dialog class="asset-lightbox" id="asset-lightbox"><button class="asset-lightbox-close" type="button" aria-label="关闭原图">×</button><button class="asset-lightbox-nav asset-lightbox-prev" type="button" aria-label="查看上一张"><span class="arrow-icon" aria-hidden="true"></span></button><div class="asset-lightbox-media" id="asset-lightbox-media"></div><button class="asset-lightbox-nav asset-lightbox-next" type="button" aria-label="查看下一张"><span class="arrow-icon" aria-hidden="true"></span></button></dialog>
-    <script src="assets-manifest.js"></script><script src="app.js"></script>
-  </body>
+        <div class="resume-experience">
+          <div class="resume-experience-heading">
+            <time>2020.5-2026.4</time>
+            <h3>上海鲲驰贸易发展有限公司北京分公司｜设计主管</h3>
+          </div>
+          <p>行业方向：奢侈美妆、电商品牌视觉</p>
+          <p>代表品牌：GIVENCHY、MAKE UP FOR EVER、BENEFIT</p>
+          <p>管理经验：常态管理3–4人设计小组，累计带教10名设计师</p>
+          <p>工作范围：活动KV、店铺首页、商品详情、主图、推广投放、直播视觉</p>
+          <p>管理职责：需求拆解、项目排期、任务分配、设计审核、日常巡检、SOP建设</p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="contact-panel" id="contact" aria-labelledby="contact-title">
+    <div class="contact-ground" aria-hidden="true"></div>
+    <div class="contact-art" aria-hidden="true">
+      <img src="./asset/contact/contact-sit-highres.png" alt="" loading="lazy" decoding="async">
+      <img class="contact-bubble" src="./asset/contact/contact-bubble-mastergo.png" alt="TA会联系我吗？" loading="lazy" decoding="async">
+    </div>
+    <div class="contact-content">
+      <div class="contact-qrcode">
+        <img src="./asset/contact/wechat-qrcode-black.svg" alt="微信二维码">
+      </div>
+      <div class="contact-details">
+        <h2 id="contact-title" class="sr-only">联系我</h2>
+        <button class="copy-contact" type="button" data-copy-text="CU_Nextday" aria-label="复制微信号 CU_Nextday">
+          <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8.1 18.6 4.7 20l.8-3.2C3.6 15.5 2.5 13.3 2.5 11c0-4.1 4.2-7.4 9.4-7.4s9.4 3.3 9.4 7.4-4.2 7.4-9.4 7.4c-1.3 0-2.6-.2-3.8-.7Z"/><circle cx="8.7" cy="10.8" r=".8"/><circle cx="15.2" cy="10.8" r=".8"/></svg><span class="contact-value">CU_Nextday</span><span class="copy-tip" aria-live="polite">点击即可复制</span>
+        </button>
+        <button class="copy-contact" type="button" data-copy-text="13522972710" aria-label="复制电话 13522972710">
+          <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5.2 3.8 8 3l1.8 4.4-2.2 1.8c1 2.1 2.5 3.7 4.7 4.7l1.8-2.2 4.4 1.8-.8 2.8c-.3 1.1-1.4 1.7-2.5 1.4-6.4-1.8-11-6.4-12.8-12.8-.3-1.1.3-2.2 1.4-2.5Z"/></svg><span class="contact-value">13522972710</span><span class="copy-tip" aria-live="polite">点击即可复制</span>
+        </button>
+        <button class="copy-contact" type="button" data-copy-text="987685224@qq.com" aria-label="复制邮箱 987685224@qq.com">
+          <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m4 7 8 6 8-6"/></svg><span class="contact-value">987685224@qq.com</span><span class="copy-tip" aria-live="polite">点击即可复制</span>
+        </button>
+        <a class="resume-download" href="./asset/documents/王思远_设计主管版.pdf" download="王思远_设计主管版.pdf">
+          <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5M12 10v7m-3-3 3 3 3-3"/></svg><span>下载PDF简历</span>
+        </a>
+      </div>
+    </div>
+    <p class="contact-copyright">© 2026 王思远。本网站为个人非商业作品集，仅用于展示本人参与或负责的已公开项目及专业能力。品牌名称、商标及项目素材的相关权利归各自权利人所有。未经许可，请勿转载或用于商业用途。如有权利问题，请通过本站联系方式联系。</p>
+  </section>
+  <div class="contact-scroll-spacer" aria-hidden="true"></div>
+</div>
+</body>
 </html>

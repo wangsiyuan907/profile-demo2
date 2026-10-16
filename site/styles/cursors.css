@@ -1,0 +1,10 @@
+/* User-supplied 32px cursors; hotspots from custom_cursor_set/manifest.json.
+   Browser-only styling: no OS cursor settings or JS pointer replacement. */
+@media (any-pointer: fine) {
+  html, body { cursor: url('../asset/cursors/01-default-arrow.png') 5 4, auto; }
+  a, button, [role="button"], .nav-item, .copy-contact { cursor: url('../asset/cursors/02-pointer-hand.png') 15 4, pointer; }
+  .case-card { cursor: url('../asset/cursors/06-view-project.png') 22 17, pointer; }
+  input, textarea, [contenteditable="true"], .hero-copy, .resume-intro p, .resume-experience p, .contact-copyright { cursor: url('../asset/cursors/03-text-ibeam.png') 16 16, text; }
+  [draggable="true"], [data-cursor="drag"] { cursor: url('../asset/cursors/04-drag-move.png') 16 16, grab; }
+  [aria-busy="true"] { cursor: url('../asset/cursors/05-loading-cat.png') 16 16, progress; }
+}

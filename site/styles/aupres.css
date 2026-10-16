@@ -1,0 +1,41 @@
+/* MasterGo node 15:13141, 1440 × 4718. */
+.aupres-detail .case-body { padding-bottom: 0; }
+.aupres-detail .case-body-inner { background: #fff; }
+.aupres-detail .case-sidebar h1 { margin-top: 4.6527778cqw; }
+.aupres-opening { background: #f6f4f0; }
+.aupres-opening > .case-wide-image,
+.aupres-pair img,
+.aupres-composite img { mix-blend-mode: multiply; }
+
+.aupres-facts { position: relative; height: 17.2222222cqw; background: #fff; }
+.aupres-logo { position: absolute; left: 4.1666667cqw; top: 7.5cqw; width: 16.8055556cqw; height: auto; }
+.aupres-facts .case-facts { position: absolute; left: 25.3472222cqw; top: 5cqw; font-size: 1.1111111cqw; }
+
+.aupres-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2.7777778cqw; height: 36.1111111cqw; }
+.aupres-pair figure { display: flex; align-items: center; justify-content: center; margin: 0; background: #f6f4f0; overflow: hidden; }
+.aupres-pair figure:first-child img { width: 8.5069444cqw; height: auto; }
+.aupres-pair figure:last-child img { width: 8.875cqw; height: auto; }
+
+.aupres-copy { height: 19.9305556cqw; padding: 5.2083333cqw 3.0555556cqw 0 23.8888889cqw; }
+.aupres-pair + .aupres-copy { height: 20cqw; }
+.aupres-copy h2 { font-family: "Source Han Sans CN", sans-serif; font-size: 1.8055556cqw; font-weight: 400; line-height: 1.2; letter-spacing: .0902778cqw; }
+.aupres-copy p { margin-top: 2.2222222cqw; font-family: "Source Han Sans CN", sans-serif; font-size: 1.1111111cqw; font-weight: 300; line-height: 1.5; }
+
+.aupres-composite { position: relative; height: 36.1111111cqw; overflow: hidden; background: #f6f4f0; }
+.aupres-angle { position: absolute; left: 0; top: 0; width: 36.8055556cqw; height: 36.1111111cqw; object-fit: cover; }
+.aupres-refill { position: absolute; right: 4.7916667cqw; top: 0; width: 23.6805556cqw; height: 36.1111111cqw; object-fit: cover; }
+
+.aupres-other-cases .other-cases-grid { gap: 1.3888889cqw; }
+.aupres-other-cases { padding: 2.2916667cqw 2.7777778cqw 0; }
+.aupres-other-cases .other-cases-grid a { flex: 0 0 22.5694444cqw; aspect-ratio: 325 / 390; background: #fff; }
+.aupres-other-cases h2 { margin-left: .2777778cqw; font-family: "SmileySans Oblique"; font-size: 2.0833333cqw; font-weight: 400; line-height: 1.5; letter-spacing: .1041667cqw; }
+.aupres-other-cases .other-cases-grid { margin-top: 1.7361111cqw; }
+.aupres-other-cases .other-aqualabel .other-cover { left: -3.3333333cqw; top: -5.4166667cqw; width: 29.1666667cqw; height: 29.1666667cqw; }
+.aupres-other-cases .other-gucci .other-cover { left: 0; bottom: -1.4583333cqw; width: 22.5694444cqw; height: 40.2083333cqw; }
+.aupres-other-cases .other-dabao .other-cover { left: -2.1527778cqw; top: -12.3611111cqw; width: 26.8055556cqw; height: 47.6388889cqw; }
+.aupres-other-cases .other-ip .other-cover { left: -4.5138889cqw; top: 0; width: 31.6666667cqw; height: 18.8888889cqw; }
+.aupres-other-cases .detail-copyright { position: absolute; left: 0; right: 0; bottom: 2.8472222cqw; margin: 0; }
+
+@media (max-width: 760px) {
+  .aupres-facts dl, .aupres-copy p { line-height: 1.4; }
+}

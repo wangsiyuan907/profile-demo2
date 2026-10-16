@@ -1,0 +1,64 @@
+/* MasterGo: 13:8232, 13:01504, 13:01752, 13:04945, 13:06527.
+   Original 1440 × 820 geometry, uniformly scaled and bottom anchored.
+   Preview PNGs are transparent original image groups, including their rotations. */
+html.cases-open { overflow: hidden; }
+.cases-panel { position: fixed; inset: 5cqw 0 0; z-index: 10; overflow: hidden; background: #fff; }
+.cases-panel[hidden] { display: none; }
+.cases-stage { position: absolute; width: 1440px; height: 820px; bottom: 0; left: 0; transform: scale(var(--cases-scale, 1)); transform-origin: bottom left; }
+.case-card { position: absolute; width: 720px; height: 615px; margin: 0; padding: 0; border: 0; text-align: left; cursor: pointer; color: #fff; background: none; isolation: isolate; transform: translateY(440px); opacity: 0; transition: transform 380ms cubic-bezier(.2,.8,.2,1), opacity 160ms ease; }
+.cases-panel.is-entered .case-card { transform: translateY(0); opacity: 1; transition-delay: var(--enter-delay); }
+.case-card::before, .case-card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--card-art) 0 0 / 100% 100% no-repeat; pointer-events: none; }
+.case-card::after { background-image: var(--muted-art); opacity: 0; transition: opacity 150ms ease; }
+.cases-panel[data-active] .case-card:not(.is-active)::after { opacity: 1; }
+.cases-panel[data-active] .case-card:not(.is-active) { color: #fff; }
+.case-card span { position: absolute; white-space: nowrap; font-weight: 400; transition: color 150ms ease; }
+.case-number { left: 40px; top: 25px; font: 24px/1.07 "SmileySans Oblique"; }
+.case-name { left: 81px; top: 28px; font: 350 16px/1.5 "Source Han Sans CN", sans-serif; }
+.case-brand { left: 40px; top: 92px; font: 56px/1.07 "SmileySans Oblique"; }
+.case-card .case-role { top: 107px; font: 28px/1.07 "SmileySans Oblique"; opacity: 0; visibility: hidden; transform: translateY(9px); transition: opacity 130ms ease, transform 180ms ease, visibility 130ms; }
+.case-card.is-active .case-role { opacity: 1; visibility: visible; transform: translateY(0); }
+.case-givenchy { left: 0; top: 445px; z-index: 2; --enter-delay: 0ms; --card-art: url('../asset/cases/svg_19ee5f1b.svg'); --muted-art: url('../asset/cases/svg_14f90678.svg'); }
+.case-givenchy .case-role { left: 382px; }
+.case-hdskin { left: 720px; top: 445px; z-index: 3; color: #000; --enter-delay: 65ms; --card-art: url('../asset/cases/svg_8d401423.svg'); --muted-art: url('../asset/cases/svg_14f90678.svg'); }
+.case-hdskin .case-role { left: 475px; top: 102px; line-height: 1.5; }
+.case-benefit { left: 0; top: 625px; width: 640px; z-index: 5; --enter-delay: 130ms; --card-art: url('../asset/cases/svg_455c72cf.svg'); --muted-art: url('../asset/cases/svg_d2825f38.svg'); }
+.case-benefit .case-role { left: 335px; }
+.case-mufe-cny { left: 640px; top: 625px; width: 890px; z-index: 7; --enter-delay: 195ms; --card-art: url('../asset/cases/svg_965de809.svg'); --muted-art: url('../asset/cases/svg_b014df38.svg'); }
+.case-mufe-cny .case-role { left: 496px; }
+.case-preview { position: absolute; height: auto; opacity: 0; transform: translateY(170px); pointer-events: none; transition: transform 230ms cubic-bezier(.16,1,.3,1), opacity 120ms ease; }
+.preview-givenchy { left: 283px; top: 338px; width: 420.13px; z-index: 1; }
+.preview-hdskin { left: 888px; top: 302px; width: 525.16px; z-index: 1; }
+.preview-benefit { left: 141px; top: 503px; width: 490.57px; z-index: 4; }
+.preview-mufe-cny { left: 917px; top: 492px; width: 490.57px; z-index: 6; }
+.cases-panel[data-active="givenchy"] .preview-givenchy,
+.cases-panel[data-active="hdskin"] .preview-hdskin,
+.cases-panel[data-active="benefit"] .preview-benefit,
+.cases-panel[data-active="mufe-cny"] .preview-mufe-cny { opacity: 1; transform: translateY(0); }
+.case-card:focus-visible { outline: 2px solid currentColor; outline-offset: -5px; }
+.case-card:focus-visible .case-name { text-decoration: underline; text-underline-offset: 5px; }
+.card-shadow { position: absolute; inset: 0; width: 1440px; height: 820px; pointer-events: none; opacity: 0; transition: opacity 150ms ease; }
+.cases-panel.is-ready .card-shadow { opacity: 1; }
+.cases-panel.is-ready[data-active] .card-shadow { opacity: 0; }
+/* Collaboration reuses the same interaction, with the source's two/three layout. */
+.case-aupres { left: 0; top: 445px; z-index: 2; --enter-delay: 0ms; --card-art: url('../asset/collaboration/svg_6811f14a.svg'); --muted-art: url('../asset/collaboration/svg_14f90678.svg'); }
+.case-aupres .case-role { left: 382px; }
+.case-aqualabel { left: 720px; top: 445px; z-index: 3; --enter-delay: 65ms; --card-art: url('../asset/collaboration/svg_4d82934d.svg'); --muted-art: url('../asset/collaboration/svg_14f90678.svg'); }
+.case-aqualabel .case-role { left: 451px; }
+.case-gucci { left: 0; top: 625px; width: 467px; z-index: 5; --enter-delay: 130ms; --card-art: url('../asset/collaboration/svg_ae43f6a6.svg'); --muted-art: url('../asset/collaboration/svg_8712031e.svg'); }
+.case-gucci .case-role, .case-dabao .case-role { left: 262px; }
+.case-dabao { left: 467px; top: 625px; width: 467px; z-index: 7; --enter-delay: 195ms; --card-art: url('../asset/collaboration/svg_a67ca199.svg'); --muted-art: url('../asset/collaboration/svg_8712031e.svg'); }
+.case-ip { left: 934px; top: 625px; width: 506px; z-index: 9; --enter-delay: 260ms; --card-art: url('../asset/collaboration/svg_f6f7ba54.svg'); --muted-art: url('../asset/collaboration/svg_f2b28e58.svg'); }
+.case-ip .case-role { left: 161px; }
+.preview-aupres { left: 283px; top: 338px; width: 420.13px; z-index: 1; }
+.preview-aqualabel { left: 997px; top: 338px; width: 420.13px; z-index: 1; }
+.preview-gucci { left: 183px; top: 520px; width: 274.47px; z-index: 4; }
+.preview-dabao { left: 675px; top: 520px; width: 274.47px; z-index: 4; }
+.preview-ip { left: 1143px; top: 528px; width: 282.87px; z-index: 4; }
+.cases-panel[data-active="aupres"] .preview-aupres,
+.cases-panel[data-active="aqualabel"] .preview-aqualabel,
+.cases-panel[data-active="gucci"] .preview-gucci,
+.cases-panel[data-active="dabao"] .preview-dabao,
+.cases-panel[data-active="ip"] .preview-ip { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .case-card, .case-card::after, .case-card span, .case-card .case-role, .case-preview, .card-shadow { transition: none !important; }
+}

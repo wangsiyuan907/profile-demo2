@@ -1,0 +1,147 @@
+/* MasterGo node 18:02362, 1440 x 2311. */
+.dabao-detail .case-body {
+  height: 114.0277778cqw;
+  padding-bottom: 5.5555556cqw;
+  overflow: hidden;
+}
+
+.dabao-detail .case-body-inner {
+  height: 105.6944444cqw;
+  border-radius: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.dabao-detail .case-sidebar h1 { font-size: 2.3611111cqw; }
+
+.dabao-facts {
+  position: relative;
+  flex: none;
+  height: 18.0555556cqw;
+  background: #fff;
+}
+
+.dabao-logo {
+  position: absolute;
+  left: 5.5555556cqw;
+  top: 5.4166667cqw;
+  width: 7.6388889cqw;
+  height: 7.6388889cqw;
+  object-fit: contain;
+}
+
+.dabao-facts .case-facts {
+  position: absolute;
+  left: 17.1527778cqw;
+  top: 5.8333333cqw;
+  font-size: 1.1111111cqw;
+}
+
+.dabao-motion {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+}
+
+.dabao-panel {
+  position: relative;
+  flex: none;
+  height: 36.1111111cqw;
+  overflow: hidden;
+  background: #ef3e42;
+  color: #fff;
+}
+
+.dabao-panel-media {
+  position: absolute;
+  top: 0;
+  width: 36.1111111cqw;
+  height: 36.1111111cqw;
+  margin: 0;
+  overflow: hidden;
+  background: #ef3e42;
+}
+
+.dabao-panel-media video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dabao-panel-copy {
+  position: absolute;
+  z-index: 1;
+  font-family: "Source Han Sans CN", sans-serif;
+}
+
+.dabao-panel-copy h2,
+.dabao-conclusion h2 {
+  margin: 0;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.8055556cqw;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .0902778cqw;
+}
+
+.dabao-panel-copy p,
+.dabao-conclusion p {
+  margin: 0;
+  font-family: "Source Han Sans CN", sans-serif;
+  font-size: 1.1111111cqw;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.dabao-panel-overview .dabao-panel-media { right: 0; }
+.dabao-panel-overview .dabao-panel-copy {
+  left: 4.1666667cqw;
+  top: 4.1666667cqw;
+  width: 22.9166667cqw;
+}
+.dabao-panel-overview .dabao-panel-copy p { margin-top: 2.0833333cqw; }
+
+.dabao-panel-exploded { margin-top: 2.7777778cqw; }
+.dabao-panel-exploded .dabao-panel-media { left: 0; }
+.dabao-panel-exploded .dabao-panel-copy {
+  left: 40.2777778cqw;
+  top: 15.9722222cqw;
+  width: 21.6666667cqw;
+}
+.dabao-panel-exploded .dabao-panel-copy p { margin-top: 2.0833333cqw; }
+
+.dabao-conclusion {
+  position: relative;
+  flex: none;
+  height: 12.6388889cqw;
+  padding: 5cqw 0 0 2.7777778cqw;
+  color: #000;
+}
+
+.dabao-conclusion p {
+  margin-top: 2.0833333cqw;
+  width: 59.7222222cqw;
+}
+
+.dabao-other-cases { padding: 2.2916667cqw 2.7777778cqw 0; }
+.dabao-other-cases h2 {
+  margin-left: .2777778cqw;
+  font-family: "SmileySans Oblique";
+  font-size: 2.0833333cqw;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .1041667cqw;
+}
+.dabao-other-cases .other-cases-grid { gap: 1.3888889cqw; margin-top: 1.7361111cqw; }
+.dabao-other-cases .other-cases-grid a { flex: 0 0 22.5694444cqw; aspect-ratio: 325 / 390; background: #fff; }
+.dabao-other-cases .other-aupres .other-cover { inset: 0; width: 100%; height: 100%; }
+.dabao-other-cases .other-aqualabel .other-cover { left: -3.3333333cqw; top: -5.4166667cqw; width: 29.1666667cqw; height: 29.1666667cqw; }
+.dabao-other-cases .other-gucci .other-cover { left: 0; bottom: -1.4583333cqw; width: 22.5694444cqw; height: 40.2083333cqw; }
+.dabao-other-cases .other-ip .other-cover { left: -4.5138889cqw; top: 0; width: 31.6666667cqw; height: 18.8888889cqw; }
+.dabao-other-cases .detail-copyright { position: absolute; right: 0; bottom: 2.8472222cqw; left: 0; margin: 0; }
+
+@media (max-width: 760px) {
+  .dabao-panel-copy p,
+  .dabao-conclusion p { line-height: 1.4; }
+}
