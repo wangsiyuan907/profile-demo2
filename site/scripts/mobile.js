@@ -73,7 +73,10 @@
   function renderHome() {
     const container = page('mobile-home', 'home');
     const art = element('div', 'mobile-hero-art');
-    art.append(photo('./asset/images/portrait-upscaled.png', '王思远抱着猫的个人插画', true));
+    const portrait = photo('./asset/images/portrait-upscaled.png', '王思远抱着猫的个人插画', true);
+    portrait.srcset = './asset/optimized/images/portrait-upscaled-1200.webp 1200w, ./asset/optimized/images/portrait-upscaled-2048.webp 2048w, ./asset/images/portrait-upscaled.png 2625w';
+    portrait.sizes = '90vw';
+    art.append(portrait);
     container.append(art);
     container.append(title('PORTFOLIO / 2026', '让复杂的需求，变成清楚又好看的答案。'));
     container.append(element('p', 'mobile-lead', '10年美妆奢品电商视觉设计'));
@@ -125,7 +128,10 @@
     const container = page('mobile-contact', 'contact');
     container.append(title('CONTACT', '联系我'));
     const art = element('div', 'mobile-contact-visual');
-    art.append(photo('./asset/contact/contact-sit-highres.png', '', true));
+    const contactArt = photo('./asset/contact/contact-sit-highres.png', '', true);
+    contactArt.srcset = './asset/optimized/contact/contact-sit-highres-1200.webp 1200w, ./asset/optimized/contact/contact-sit-highres-2560.webp 2560w, ./asset/contact/contact-sit-highres.png 6144w';
+    contactArt.sizes = '85vw';
+    art.append(contactArt);
     container.append(art);
     const list = element('div', 'mobile-contact-list');
     for (const [label, value] of [['微信', 'CU_Nextday'], ['电话', '13522972710'], ['邮箱', '987685224@qq.com']]) {
@@ -153,6 +159,14 @@
     if (source.tagName === 'IMG') {
       const src = resolvedAsset(source.getAttribute('src'), sourceUrl);
       const image = photo(src, source.getAttribute('alt') || '');
+      const srcset = source.getAttribute('srcset');
+      if (srcset) {
+        image.srcset = srcset.split(',').map(candidate => {
+          const [url, descriptor] = candidate.trim().split(/\s+/, 2);
+          return `${resolvedAsset(url, sourceUrl)} ${descriptor}`;
+        }).join(', ');
+        image.sizes = '100vw';
+      }
       if (source.getAttribute('width')) image.width = Number(source.getAttribute('width'));
       if (source.getAttribute('height')) image.height = Number(source.getAttribute('height'));
       if (src.includes('/asset/ip/')) {
@@ -173,7 +187,7 @@
       if (source.getAttribute('poster')) video.poster = resolvedAsset(source.getAttribute('poster'), sourceUrl);
       video.controls = true;
       video.playsInline = true;
-      video.preload = 'metadata';
+      video.preload = 'none';
       video.setAttribute('aria-label', source.getAttribute('aria-label') || '案例视频');
       figure.append(video);
     }
@@ -264,7 +278,7 @@
           ...fallback,
           title: link.querySelector('strong')?.textContent.trim() || fallback.title,
           role: link.querySelector('.other-caption span')?.textContent.trim() || fallback.role,
-          cover: resolvedAsset(link.querySelector('.other-cover')?.getAttribute('src') || fallback.cover, sourceUrl),
+          cover: resolvedAsset(link.querySelector('.other-cover')?.getAttribute('src') || link.querySelector('.other-cover')?.getAttribute('data-src') || fallback.cover, sourceUrl),
         };
       }).filter(Boolean);
       recommendations.append(cards(recommended));

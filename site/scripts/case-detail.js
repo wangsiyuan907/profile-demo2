@@ -4,9 +4,17 @@
   const sheet = document.querySelector('.detail-foreground');
   const footer = document.querySelector('.other-cases');
   let pending = false;
+  function loadFooterCovers() {
+    footer.querySelectorAll('img[data-src]').forEach(image => {
+      image.src = image.dataset.src;
+      delete image.dataset.src;
+    });
+  }
   function update() {
     pending = false;
-    footer.inert = sheet.getBoundingClientRect().bottom > footer.getBoundingClientRect().top + 1;
+    const distance = sheet.getBoundingClientRect().bottom - footer.getBoundingClientRect().top;
+    footer.inert = distance > 1;
+    if (distance <= innerHeight / 2) loadFooterCovers();
   }
   function schedule() {
     if (!pending) { pending = true; requestAnimationFrame(update); }

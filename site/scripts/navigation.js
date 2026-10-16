@@ -24,14 +24,36 @@ window.PortfolioViews = (() => {
   const aboutPanel = document.getElementById('about');
   const contactPanel = document.getElementById('contact');
   const homePanel = document.getElementById('home');
+  function loadContactArt() {
+    contactPanel?.querySelectorAll('img[data-src]').forEach(image => {
+      if (image.dataset.srcset) {
+        image.srcset = image.dataset.srcset;
+        delete image.dataset.srcset;
+      }
+      image.src = image.dataset.src;
+      delete image.dataset.src;
+    });
+  }
+  function loadAboutArt() {
+    aboutPanel?.querySelectorAll('img[data-src]').forEach(image => {
+      image.src = image.dataset.src;
+      delete image.dataset.src;
+    });
+  }
   if (homePanel) {
     handlers.set('home', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
   if (aboutPanel) {
-    handlers.set('about', () => aboutPanel.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    handlers.set('about', () => {
+      loadAboutArt();
+      aboutPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
   if (contactPanel) {
-    handlers.set('contact', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
+    handlers.set('contact', () => {
+      loadContactArt();
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+    });
   }
   if (aboutPanel || contactPanel) {
     const header = document.querySelector('.site-header');
@@ -40,6 +62,8 @@ window.PortfolioViews = (() => {
       if (document.documentElement.classList.contains('cases-open')) return;
       const headerHeight = header.getBoundingClientRect().height;
       const aboutRect = aboutPanel?.getBoundingClientRect();
+      if (aboutRect && aboutRect.top <= innerHeight + 300) loadAboutArt();
+      if (aboutRect && aboutRect.bottom <= innerHeight + 500) loadContactArt();
       const heroCovered = aboutRect && aboutRect.top <= headerHeight + 1;
       const contactRevealed = aboutRect && aboutRect.bottom <= headerHeight + 1;
       portfolio?.classList.toggle('is-contact-revealed', Boolean(heroCovered));

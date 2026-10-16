@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Source Han Sans CN";
-  src: url("../asset/fonts/SourceHanSansCN-Light.otf") format("opentype");
+  src: url("../asset/fonts/SourceHanSansCN-Light-subset.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,14 +21,14 @@
 }
 @font-face {
   font-family: "Source Han Sans CN";
-  src: url("../asset/fonts/SourceHanSansCN-Normal.otf") format("opentype");
+  src: url("../asset/fonts/SourceHanSansCN-Normal-subset.woff2") format("woff2");
   font-weight: 350;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Han Sans CN";
-  src: url("../asset/fonts/SourceHanSansCN-Medium.otf") format("opentype");
+  src: url("../asset/fonts/SourceHanSansCN-Medium-subset.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: block;
