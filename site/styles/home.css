@@ -1,6 +1,6 @@
 /* Base measurements come from MasterGo 首页 13:9752, 1440 × 820.
    Every cqw value is the original pixel measurement / 14.4.
-   Preserve proportional scaling; do not clamp typography independently. */
+   The 1440px composition scales proportionally; the narrow-desktop query keeps body copy readable. */
 *, *::before, *::after { box-sizing: border-box; }
 html { background: #fff; }
 body { padding: 0; margin: 0; min-height: 100svh; container-type: inline-size; }
@@ -42,7 +42,7 @@ a:focus-visible, button:focus-visible { outline: 0.1388889cqw solid #000; outlin
 .resume-card { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; border-radius: .4166667cqw; background: #fff; box-shadow: .1388889cqw .1388889cqw 0 #d8cdc0; color: #000; cursor: pointer; transform-origin: left bottom; transition: transform 580ms cubic-bezier(.22,1,.36,1), box-shadow 580ms cubic-bezier(.22,1,.36,1); }
 .resume-card.is-front { z-index: 2; transform: translate(0,0) rotate(0); }
 .resume-card:not(.is-front) { z-index: 1; transform: none; }
-.resume-card.is-front:hover, .resume-card.is-front:focus-visible { transform: rotate(-2deg); }
+.resume-stack:not(.is-just-switched) .resume-card.is-front:hover { transform: rotate(-2deg); }
 .resume-stack.is-switching .resume-card.is-front { transform: rotate(-2deg); }
 .resume-card:focus-visible { outline: .2cqw solid #111; outline-offset: .3cqw; }
 .resume-card::before, .resume-card::after { position: absolute; z-index: 4; right: 0; left: 0; border-top: 1px dashed #251d1f; content: ""; pointer-events: none; }
@@ -84,7 +84,7 @@ a:focus-visible, button:focus-visible { outline: 0.1388889cqw solid #000; outlin
 .resume-job h3 time { flex: none; }
 .resume-job p { line-height: 1.5; }
 .resume-stack-hint { display: none; }
-@media (prefers-reduced-motion: reduce) { .resume-card { transition: none; } .resume-card.is-front:hover, .resume-card.is-front:focus-visible, .resume-stack.is-switching .resume-card.is-front { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .resume-card { transition: none; } .resume-stack:not(.is-just-switched) .resume-card.is-front:hover, .resume-stack.is-switching .resume-card.is-front { transform: none; } }
 
 /* Contact stays fixed behind the scrolling About panel. Once About reaches the
    header edge, it continues upward and exposes this final canvas from below. */
@@ -109,3 +109,10 @@ a:focus-visible, button:focus-visible { outline: 0.1388889cqw solid #000; outlin
 .resume-download { display: inline-flex; align-items: center; gap: .6944444cqw; margin: 0; padding: 0; color: #000; text-decoration: none; }
 .resume-download:hover span, .resume-download:focus-visible span { text-decoration: underline; text-underline-offset: .4166667cqw; }
 .contact-copyright { position: absolute; z-index: 2; right: 12cqw; bottom: .9722222cqw; left: 12cqw; margin: 0; color: rgba(0,0,0,.58); font-family: "Source Han Sans CN", sans-serif; font-size: max(10px, .4861111cqw); font-weight: 400; line-height: 1.3; text-align: center; }
+@media (max-width: 1200px) {
+  .resume-stack { width: min(820px, 90cqw); }
+  .nav-item { font-size: max(12px, .9722222cqw); }
+  .resume-intro p, .resume-summary p, .resume-capabilities p, .resume-job p { font-size: max(12px, .8333333cqw); }
+  .resume-intro h2, .resume-summary h3, .resume-capabilities h3, .resume-job h3 { font-size: max(14px, 1.1111111cqw); }
+  .contact-value, .resume-download { font-size: max(12px, .9722222cqw); }
+}

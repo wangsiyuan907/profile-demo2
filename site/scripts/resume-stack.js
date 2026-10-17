@@ -21,7 +21,7 @@
     switching = true;
     const next = cards.find(candidate => candidate !== card);
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    stack.classList.add('is-switching');
+    stack.classList.add('is-switching', 'is-just-switched');
     setTimeout(() => {
       stack.classList.remove('is-switching');
       activate(next);
@@ -29,6 +29,8 @@
       setTimeout(() => { switching = false; }, reducedMotion ? 0 : 580);
     }, reducedMotion ? 0 : 230);
   }
+
+  stack.addEventListener('pointerleave', () => stack.classList.remove('is-just-switched'));
 
   for (const card of cards) {
     card.addEventListener('click', () => switchCard(card));

@@ -10,9 +10,9 @@
   ];
   const collaboration = [
     { slug: 'aupres', title: 'AUPRES 双泵精华', role: '产品建模 / 结构视觉资产', cover: './asset/shared/recommend-aupres-mastergo-3x.jpg' },
-    { slug: 'aqualabel', title: '水之印系列产品视觉构建', role: '产品效果图 / 系列视觉资产', cover: './asset/flora/recommend-aqualabel.jpg' },
-    { slug: 'flora', title: 'Flora香水动态视觉探索', role: '产品建模 / 前段动画', cover: './asset/aqualabel/original-recommend-gucci.jpg' },
-    { slug: 'dabao', title: '麻将礼盒开盒动画', role: '礼盒三维 / 开盒动画', cover: './asset/aqualabel/original-recommend-dabao.jpg' },
+    { slug: 'aqualabel', title: '水之印系列产品视觉构建', role: '系列效果图构建', cover: './asset/flora/recommend-aqualabel.jpg' },
+    { slug: 'flora', title: 'Flora香水动态视觉探索', role: '产品建模与动画', cover: './asset/aqualabel/original-recommend-gucci.jpg' },
+    { slug: 'dabao', title: '麻将礼盒开盒动画', role: '礼盒开盒动画', cover: './asset/aqualabel/original-recommend-dabao.jpg' },
     { slug: 'ip', title: '公司 IP 视觉探索与三维延展', role: '独立提案 / 三维五视图', cover: './asset/aqualabel/original-recommend-ip.jpg' },
   ];
   const allCases = [...core, ...collaboration];
@@ -79,7 +79,7 @@
     art.append(portrait);
     container.append(art);
     container.append(title('PORTFOLIO / 2026', '让复杂的需求，变成清楚又好看的答案。'));
-    container.append(element('p', 'mobile-lead', '10年美妆奢品电商视觉设计'));
+    container.append(element('p', 'mobile-lead', '近10年美妆奢品电商视觉设计'));
     const actions = element('div', 'mobile-home-actions');
     const caseLink = element('a', 'mobile-action primary', '查看案例');
     caseLink.href = '#cases';
@@ -105,7 +105,7 @@
     top.append(photo('./asset/about/resume-portrait-peace.png', '王思远人物插画'));
     const intro = element('div');
     intro.append(element('h2', '', '王思远'));
-    intro.append(element('p', '', '北京｜10年电商视觉经验'));
+    intro.append(element('p', '', '北京｜近10年电商视觉经验'));
     intro.append(element('p', '', '高端美妆｜3–4人团队管理'));
     top.append(intro);
     card.append(top);
@@ -259,7 +259,11 @@
       container.append(back);
       const hero = element('header', 'mobile-case-hero');
       hero.append(element('h1', '', sidebar.querySelector('h1')?.textContent.trim() || meta.title));
-      hero.append(element('p', 'mobile-case-year', sidebar.querySelector('.case-brand-year')?.textContent.trim() || ''));
+      const projectType = sidebar.querySelector('.case-project-type')?.textContent.trim();
+      const yearSource = sidebar.querySelector('.case-brand-year')?.cloneNode(true);
+      yearSource?.querySelector('.case-project-type')?.remove();
+      if (projectType) hero.append(element('p', 'mobile-case-type', projectType));
+      hero.append(element('p', 'mobile-case-year', yearSource?.textContent.trim() || ''));
       hero.append(element('p', 'mobile-case-summary', sidebar.querySelector('.case-summary')?.textContent.trim() || ''));
       container.append(hero);
       const content = element('div', 'mobile-case-content');

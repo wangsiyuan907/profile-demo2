@@ -1,5 +1,16 @@
 /* Shared catalogue controller. Detail routes remain separate from these previews. */
 (() => {
+  const routes = {
+    givenchy: './pages/givenchy.html',
+    hdskin: './pages/hdskin.html',
+    benefit: './pages/benefit.html',
+    'mufe-cny': './pages/mufe-cny.html',
+    aupres: './pages/aupres.html',
+    aqualabel: './pages/aqualabel.html',
+    gucci: './pages/flora.html',
+    dabao: './pages/dabao.html',
+    ip: './pages/ip.html',
+  };
   const backgrounds = ['home', 'about', 'contact'].map(id => document.getElementById(id));
   const controllers = new Map();
   const setLocked = locked => {
@@ -23,7 +34,6 @@
         card.classList.toggle('is-active', selected);
         card.setAttribute('aria-expanded', String(selected));
         shadows.get(card.dataset.case)?.classList.toggle('is-selected', selected);
-        if (card.dataset.case === 'ip') card.querySelector('.case-name').textContent = selected ? '公司IP提案' : 'IP视觉探索内部提案与3D转化';
       });
     }
     function close() {
@@ -66,15 +76,7 @@
       card.addEventListener('blur', () => activate(null));
       card.addEventListener('click', () => {
         activate(card.dataset.case);
-        if (card.dataset.case === 'givenchy') window.location.href = './pages/givenchy.html';
-        if (card.dataset.case === 'hdskin') window.location.href = './pages/hdskin.html';
-        if (card.dataset.case === 'benefit') window.location.href = './pages/benefit.html';
-        if (card.dataset.case === 'mufe-cny') window.location.href = './pages/mufe-cny.html';
-        if (card.dataset.case === 'aupres') window.location.href = './pages/aupres.html';
-        if (card.dataset.case === 'aqualabel') window.location.href = './pages/aqualabel.html';
-        if (card.dataset.case === 'gucci') window.location.href = './pages/flora.html';
-        if (card.dataset.case === 'dabao') window.location.href = './pages/dabao.html';
-        if (card.dataset.case === 'ip') window.location.href = './pages/ip.html';
+        window.location.href = routes[card.dataset.case];
       });
       card.addEventListener('keydown', event => {
         if (event.key === 'Escape') { card.blur(); activate(null); }
