@@ -70,20 +70,6 @@
   height: auto;
 }
 
-.mufe-cny-asset-link {
-  position: absolute;
-  left: 4.1666667cqw;
-  bottom: 2.5cqw;
-  width: 15.9722222cqw;
-  height: 2.0833333cqw;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: transparent;
-  cursor: not-allowed;
-}
-
 .mufe-cny-detail .other-givenchy { background: #f6f4f0; }
 .mufe-cny-detail .other-benefit { background: #fe0066; }
 .mufe-cny-detail .other-hdskin { background: #e9c7af; }

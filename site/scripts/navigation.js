@@ -52,7 +52,8 @@ window.PortfolioViews = (() => {
   if (contactPanel) {
     handlers.set('contact', () => {
       loadContactArt();
-      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+      const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+      window.scrollTo({ top: aboutPanel.offsetTop + aboutPanel.offsetHeight - headerHeight, behavior: 'smooth' });
     });
   }
   if (aboutPanel || contactPanel) {
