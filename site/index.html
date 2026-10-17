@@ -7,10 +7,11 @@
   <title>王思远の作品集</title>
   <link rel="preload" href="./asset/fonts/SmileySans-Oblique.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles/fonts.css">
-  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/home.css?v=20261017-resume-stack-hover-2">
   <link rel="stylesheet" href="./styles/cases.css">
   <link rel="stylesheet" href="./styles/cursors.css">
   <script src="./scripts/navigation.js" defer></script>
+  <script src="./scripts/resume-stack.js" defer></script>
   <script src="./scripts/card-shadows.js" defer></script>
   <script src="./scripts/cases.js" defer></script>
   <script src="./scripts/routes.js" defer></script>
@@ -104,39 +105,63 @@
     </div>
   </main>
   <section class="about-panel" id="about" aria-labelledby="about-title">
-    <article class="resume-card" data-node-id="13:09513">
-      <span class="resume-rail rail-left" aria-hidden="true"></span>
-      <span class="resume-rail rail-middle" aria-hidden="true"></span>
-      <span class="resume-rail rail-right" aria-hidden="true"></span>
-      <div class="resume-spine" aria-hidden="true">
-        <i></i><i></i><i></i><i></i><i></i>
-      </div>
-      <div class="resume-left">
-        <span class="resume-year">2026</span>
-        <span class="resume-label">RESUME</span>
-        <img class="resume-portrait" data-src="./asset/about/resume-portrait-peace.png" alt="王思远人物插画">
-        <span class="resume-signature">WANG SIYUAN</span>
-      </div>
-      <div class="resume-right">
-        <span class="resume-about-label">ABOUT</span>
-        <div class="resume-intro">
-          <h2 id="about-title">王思远</h2>
-          <p>北京｜10年电商视觉经验｜高端美妆｜3–4人团队管理</p>
-          <p>教育背景：长江大学｜艺术设计专业｜本科</p>
+    <div class="resume-stack" data-active-card="profile" aria-label="关于我，双页卡片">
+      <article class="resume-card resume-card--profile is-front" data-resume-card="profile" role="button" tabindex="0" aria-label="个人简介，点击查看工作经历" aria-pressed="true" data-node-id="18:13492">
+        <span class="resume-rail rail-left" aria-hidden="true"></span>
+        <span class="resume-rail rail-middle" aria-hidden="true"></span>
+        <span class="resume-rail rail-right" aria-hidden="true"></span>
+        <div class="resume-spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="resume-left">
+          <span class="resume-year">2026</span>
+          <span class="resume-label">RESUME</span>
+          <img class="resume-portrait" data-src="./asset/about/resume-portrait-peace.png" alt="王思远人物插画">
+          <span class="resume-signature">WANG SIYUAN</span>
         </div>
-        <div class="resume-experience">
-          <div class="resume-experience-heading">
-            <time>2020.5-2026.4</time>
-            <h3>上海鲲驰贸易发展有限公司北京分公司｜设计主管</h3>
+        <div class="resume-right">
+          <span class="resume-about-label">ABOUT</span>
+          <div class="resume-intro">
+            <h2 id="about-title">王思远</h2>
+            <p>北京｜10年电商视觉设计经验｜美妆与奢侈品</p>
+            <p>长江大学｜艺术设计专业｜本科</p>
           </div>
-          <p>行业方向：奢侈美妆、电商品牌视觉</p>
-          <p>代表品牌：GIVENCHY、MAKE UP FOR EVER、BENEFIT</p>
-          <p>管理经验：常态管理3–4人设计小组，累计带教10名设计师</p>
-          <p>工作范围：活动KV、店铺首页、商品详情、主图、推广投放、直播视觉</p>
-          <p>管理职责：需求拆解、项目排期、任务分配、设计审核、日常巡检、SOP建设</p>
+          <div class="resume-summary">
+            <h3>个人简介</h3>
+            <p>聚焦美妆与奢侈品电商视觉，具备活动创意、品牌适配与多渠道落地经验。曾负责设计团队的日常管理、项目推进与成员带教。</p>
+          </div>
+          <div class="resume-capabilities">
+            <h3>我能承担的工作</h3>
+            <p><strong>活动视觉主导：</strong>结合品牌调性与活动需求，确定创意方向，完成 KV 与页面视觉设计。</p>
+            <p><strong>多渠道视觉延展：</strong>将核心视觉应用于店铺、主图、投放及直播物料，保持整体表达一致。</p>
+            <p><strong>项目统筹推进：</strong>拆解需求、协调排期与品牌审核，推进各阶段设计与交付。</p>
+            <p><strong>团队管理与带教：</strong>分配任务、审核设计、指导成员，完善日常协作与交付流程。</p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+      <article class="resume-card resume-card--experience" data-resume-card="experience" role="button" tabindex="-1" aria-label="工作经历，点击查看个人简介" aria-pressed="false" aria-hidden="true" inert>
+        <span class="resume-rail rail-left" aria-hidden="true"></span>
+        <span class="resume-rail rail-right" aria-hidden="true"></span>
+        <div class="resume-spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <span class="resume-experience-label">EXPERIENCE</span>
+        <div class="resume-jobs">
+          <section class="resume-job resume-job--current">
+            <h3><time>2020.05–2026.04</time><span>上海鲲驰贸易发展有限公司北京分公司｜设计主管</span></h3>
+            <p>服务品牌：GIVENCHY、MAKE UP FOR EVER、BENEFIT</p>
+            <p>视觉主导：主导 MAKE UP FOR EVER、BENEFIT 的电商活动视觉，从 KV 概念到页面及多渠道物料延展，覆盖618、双11、520、品牌日等节点，保持活动视觉的一致性。</p>
+            <p>项目统筹：负责 GIVENCHY 在品牌 Global Guideline 框架下的电商视觉适配，结合品牌审核与素材进度安排设计工作，统筹项目排期，推进各渠道物料按节点落地。</p>
+            <p>团队管理：常态管理3–4人设计小组，负责需求拆解、任务分配、设计审核与日常巡检；搭建需求管理表与交付 SOP，累计带教10名设计师。</p>
+          </section>
+          <section class="resume-job">
+            <h3><time>2018.08–2019.12</time><span>北京中睿意德国际商贸有限公司｜设计组组长</span></h3>
+            <p>负责公司旗下品牌的店铺首页、专题页、详情页、主图及日常运营视觉；承担需求梳理、团队任务分配和设计进度跟进。</p>
+          </section>
+          <section class="resume-job">
+            <h3><time>2016.11–2018.07</time><span>北京奢蕊时尚商贸有限公司｜视觉设计师</span></h3>
+            <p>负责京东全球购、寺库、迷橙等奢侈品销售平台的店铺与活动视觉，参与产品拍摄及后期处理。</p>
+          </section>
+        </div>
+      </article>
+      <p class="resume-stack-hint">点击卡片切换 · 个人简介 / 工作经历</p>
+    </div>
   </section>
   <section class="contact-panel" id="contact" aria-labelledby="contact-title">
     <div class="contact-ground" aria-hidden="true"></div>
